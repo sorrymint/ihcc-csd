@@ -91,5 +91,33 @@ Below is the schedule for all club meeting for summer term.
 
 ## Meeting Minutes 
 
+### Lucas Starts Meeting
+- talks about game night
+- talks about club picnic
+
+### Caden Talks about CSD Club Website
+- Progress Update
+- What we are using to make it
+
+### Luke talks about Personal Project
+- Low Fidelity WIre Frame
+- Feature List
+
+### Lucas CLoses Up Meeting
+
 
 ## Attendance 
+
+Lucas	Borton,
+Mike	Ocarroll,
+Caden	Epp,
+Clayton	Ferguson,
+Ana	Baltazar,
+Draven	Livingston,
+Shimea	Gbetsi,
+Clay	Gleason,
+fiori	weldemichael,
+Laillah	Zainath,
+Trent	Grooms,
+Ethan	Durflinger,
+Ashley	Abongwa
