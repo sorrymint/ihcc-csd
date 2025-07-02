@@ -11,3 +11,4 @@
 - [April 30th Meeting Notes](./2024-2025/Apirl30.md)
 - [June 4th Meeting Notes](./2024-2025/June4.md)
 - [June 18th Meeting Notes](./2024-2025/June18.md)
+- [July 2nd Meeting Notes](./2024-2025/July2.md)
