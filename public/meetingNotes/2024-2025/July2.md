@@ -77,4 +77,25 @@ Below is the schedule for all club meeting for summer term.
 
 ## Meeting Minutes
 
+### Lucas Talks us in
+
+### Luke talks and shows over Figma CSD Club Website Wireframes
+
+### Lucas talks about game night | switch sports | mario | etc...
+
+### Luke talks about the hard truth of software development
+- talks about step 3 of person project design ( see agenda above )
+
+
+
+
 ## Attendance 
+Laillah	Zainath,
+Mike	OCarroll,
+Draven	Livingston,
+Clay	Gleason,
+Shimea	Gbetsi,
+Caden	Epp,
+Clayton	Fergusob,
+Clayton	Ferguson,
+Arun 	Graeff
