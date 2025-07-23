@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import './globals.css';
+import Header from "./Componets/Header";
+import Footer from "./Componets/Footer";
 
 // Load fonts with CSS variable support
 const geistSans = Geist({
@@ -26,15 +28,26 @@ export const viewport: Viewport = {
 }
 
 export default function RootLayout({
-                                       children,
-                                   }: {
+    children,
+}: {
     children: React.ReactNode;
 }) {
     return (
+
         <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-        <body className="antialiased bg-white text-black">
-        {children}
-        </body>
+
+            <body className="antialiased bg-white text-black min-h-screen flex flex-col">
+
+                < Header />
+
+                <main className="flex-grow">
+                    {children}
+                </main>
+                
+                < Footer />
+            </body>
+
         </html>
+
     );
 }
