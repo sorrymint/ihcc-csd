@@ -12,10 +12,9 @@ function HomeContent() {
 
     return (
         <section
-            className="px-6 sm:px-8 py-16 md:flex items-center justify-between bg-[url('/images/background.png')] bg-cover bg-center text-white relative"
+            className="px-6 sm:px-8 py-16 md:flex items-center justify-between bg-black text-white relative"
             style={{ minHeight: "600px" }}
         >
-            <div className="absolute inset-0 bg-black opacity-50 z-0" />
             <div className="max-w-xl relative z-10">
                 <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold leading-tight">
                     <span className="block">COMPUTER</span>
@@ -153,7 +152,7 @@ function FAQSection() {
 
 export default function HomePage() {
     return (
-        <div className="bg-[url(/images/background.png)]">
+        <div className="bg-black">
             <main className="flex-1">
                 <HomeContent />
                 <UpcomingSection />
@@ -162,7 +161,5 @@ export default function HomePage() {
         </div>
     );
 }
-
-
 
 
