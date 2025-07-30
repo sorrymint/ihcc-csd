@@ -1,31 +1,29 @@
-// src/app/Notes/page.tsx
-
 import fs from 'fs'
 import path from 'path'
 import Link from 'next/link'
 
-export default function NotesIndex() {
+const contentDir = path.join(process.cwd(), 'src/content')
 
-  const contentDir = path.join(process.cwd(), 'src/content')
-  const files = fs.readdirSync(contentDir)
+function getYearFolders() {
+  return fs.readdirSync(contentDir).filter((file) =>
+    fs.statSync(path.join(contentDir, file)).isDirectory()
+  )
+}
 
-  const slugs = files
-    .filter((file) => file.endsWith('.md'))
-    .map((file) => file.replace(/\.md$/, ''))
+export default function NotesIndexPage() {
+  const years = getYearFolders()
 
   return (
-    <main className="p-8">
-      <h1 className="text-3xl font-bold mb-4">Notes</h1>
-      <ul className="list-disc list-inside space-y-2">
-        {slugs.map((slug) => (
-          <li key={slug}>
-            <Link href={`/Notes/${slug}`} className="text-blue-600 hover:underline">
-              {slug}
-            </Link>
+    <div className="prose mx-auto p-6">
+      <h1>Notes by Year</h1>
+      <ul>
+        {years.map((year) => (
+          <li key={year}>
+            <Link href={`/Notes/${year}`}>{year}</Link>
           </li>
         ))}
       </ul>
-    </main>
+    </div>
   )
-
 }
+
