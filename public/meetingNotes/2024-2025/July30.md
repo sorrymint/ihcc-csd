@@ -146,5 +146,27 @@ Below is the schedule for all club meeting for summer term.
 
 ## Meeting Minutes
 
-## Attendance
+- Lucas kicks off meeting
 
+- Game night August 5th
+
+- Luke talks about next steps for personal project and suggestions
+    - see suggestions above
+
+- Luke shows off Field Projects website
+
+- Caden talks and shows off everything that has been done for the new club website
+    - hopefully fully functional by beginning of fall term
+
+- Lucas says when the last meeting is for summer term
+
+- Luke closes off meeting
+
+
+## Attendance
+Clayton	Ferguson,
+Mike	OCarroll,
+Lucas	Borton,
+Laillah	Zainath,
+Caden	Epp,
+Shimea	Gbetsi
