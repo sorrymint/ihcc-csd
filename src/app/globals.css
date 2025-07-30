@@ -1,1 +1,20 @@
 @import "tailwindcss";
+/* Add perspective for 3D effect */
+.perspective {
+    perspective: 1200px;
+}
+
+/* Continuous Y-axis rotation animation */
+@keyframes rotateY {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.animate-rotateY {
+    animation: rotateY 20s linear infinite;
+    transform-style: preserve-3d;
+}
