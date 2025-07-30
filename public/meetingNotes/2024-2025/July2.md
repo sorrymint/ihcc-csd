@@ -34,9 +34,8 @@ far please add to it and make it take up the six club meetings.
 1. **COMPLETE** Idea (What personal problem does it solve? )
 2. **COMPLETE** Feature list and Rough wireframe
 3. High Resolution wireframe / Integrative demo
-4. Pick Tech Stack
-5. UML for Database
-6. Project Roadmap, Environment Setup, and Discovery 
+4. Pick Tech Stack and UML for Database
+5. Project Roadmap, Environment Setup, and Discovery 
 
 #### Personal Project Planning Step 3
 
