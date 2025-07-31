@@ -14,11 +14,9 @@ export default function Footer() {
              </div>
             <div>
                 <br></br>
-                <a className=" flex items-center justify-center" href = "#">
-                    <p className="rounded-full p-3 pr-6 pl-6 bg-[#FFA400] text-sm  text-[#000000] hover:bg-yellow-500">
-                    Join Here
-                    </p>
-                    </a>
+                <Link href="/Contact" className='flex items-center justify-center'>
+                    <p className='rounded-full p-3 pr-6 pl-6 bg-[#FFA400] text-sm  text-[#000000] hover:bg-yellow-500'>Join Here</p>
+                </Link>
                 <br></br>
                 <br></br>
                 <br></br>
@@ -31,9 +29,9 @@ export default function Footer() {
                     </Link>
                 </div>
                 <div className="max-sm:inline-block max-sm:pl-15 flex pl-20">
-                    <a href="#"><p  className="font-semibold text-[000000]">Our Mission</p></a>
+                    <Link href="/Our-Mission"><p className="font-semibold text-[000000]">Our Mission</p></Link>
                     <Link href="/Contact" className='pr-9 pl-9 font-semibold text-[000000]'>Contact Us</Link>
-                    <a href="#"><p className="font-semibold text-[000000]">About CSD</p></a>
+                    <Link href="/AboutCSD"><p className="font-semibold text-[000000]">About CSD</p></Link>
                 </div>
                 <div className=" flex">
                     <a href="https://www.facebook.com/" target='_blank'><img className = "mt-1 h-7 w-7"src="../images/FaceBookNew.png" alt="FaceBook"></img></a>

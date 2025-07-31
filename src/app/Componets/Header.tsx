@@ -26,6 +26,9 @@ export default function Header() {
                     <li>
                          <Link href="/Contact" className="hover:text-yellow-500 font-bold">Contact</Link>
                     </li>
+                    <li>
+                         <Link href="/Alumni" className="hover:text-yellow-500 font-bold">Alumni</Link>
+                    </li>
 
                 </ul>
             
