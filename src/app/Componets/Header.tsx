@@ -6,29 +6,31 @@ export default function Header() {
         <div>
             <div className="w-full h-20 flex gap-30 items-center justify-between px-10">
                 <div>
-                    <img src="../images/IHCClogoNew.png" alt="somgthing" width={50} height={100}/>
+                    <Link href="/">
+                        <img src="../images/IHCClogoNew.png" alt="somgthing" width={50} height={100}/>
+                    </Link>
                 </div>
                 <ul className="flex gap-6 text-[20px] font-medium">
                     <li>
-                        <Link href="/">home</Link>
+                        <Link href="/" className="hover:text-yellow-500 font-bold">Home</Link>
                     </li>
                     <li>
-                         <Link href="/Blog">blog</Link>
+                         <Link href="/Blog" className="hover:text-yellow-500 font-bold">Blog</Link>
                     </li>
                     <li>
-                         <Link href="/Notes">notes</Link>
+                         <Link href="/Notes" className="hover:text-yellow-500 font-bold">Notes</Link>
                     </li>
                     <li>
-                         <Link href="/Events">events</Link>
+                         <Link href="/Events" className="hover:text-yellow-500 font-bold">Events</Link>
                     </li>
                     <li>
-                         <Link href="/Contact">contact</Link>
+                         <Link href="/Contact" className="hover:text-yellow-500 font-bold">Contact</Link>
                     </li>
 
                 </ul>
             
-                <button className="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-4 py-2 rounded-xl">
-                    <Link href="/login"> Login </Link>
+                <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-4 py-2 rounded-xl">
+                    <Link href="/Login"> Login </Link>
                 </button>
           </div>
         </div>

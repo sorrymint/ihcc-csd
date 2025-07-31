@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 function HomeContent() {
     const [today, setToday] = useState("");
@@ -60,7 +61,7 @@ function UpcomingSection() {
 
     return (
         <section className="bg-gray-50 px-6 py-16 text-black">
-            <h2 className="text-4xl font-extrabold text-center mb-12">UPCOMING</h2>
+            <h2 className="text-4xl font-extrabold text-center mb-12">{/*UPCOMING*/}**EVENTS PAGE AND FEATURES COMING SOON**</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {[1, 2, 3].map((_, index) => (
                     <div
@@ -91,9 +92,9 @@ function UpcomingSection() {
             </div>
 
             <div className="text-center mt-8">
-                <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-full shadow-md transition duration-200">
+                <Link href="/Events" className='bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-full shadow-md transition duration-200'>
                     View Events
-                </button>
+                </Link>
             </div>
         </section>
     );
@@ -118,9 +119,9 @@ function FAQSection() {
     };
 
     return (
-        <section className="bg-gray-100 max-w-6xl mx-auto mt-8 rounded-lg shadow-lg p-6">
+        <section className="bg-gray-100 max-w-6xl mx-auto mt-8 rounded-lg shadow-lg p-6 pb-20">
             <h2 className="text-4xl font-extrabold text-center mb-10">
-                FREQUENTLY ASKED QUESTIONS
+                FREQUENTLY ASKED QUESTIONS **COMING SOON**
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -140,7 +141,7 @@ function FAQSection() {
                         </button>
                         {openIndex === index && (
                             <div className="px-5 pb-4 text-sm text-gray-700">
-                                This is where the dropdown answer will appear.
+                                This is where the dropdown answer will appear. **COMING SOON**
                             </div>
                         )}
                     </div>
@@ -153,7 +154,7 @@ function FAQSection() {
 export default function HomePage() {
     return (
         <div className="bg-black">
-            <main className="flex-1">
+            <main className="flex-1 pb-8">
                 <HomeContent />
                 <UpcomingSection />
                 <FAQSection />
