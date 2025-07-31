@@ -7,10 +7,10 @@ export default function Header() {
             <div className="w-full h-20 flex gap-30 items-center justify-between px-10">
                 <div>
                     <Link href="/">
-                        <img src="../images/IHCClogoNew.png" alt="somgthing" width={50} height={100}/>
+                        <img src="../images/CSDClubLogo.png" alt="somgthing" width={50} height={100}/>
                     </Link>
                 </div>
-                <ul className="flex gap-6 text-[20px] font-medium">
+                <ul className="flex gap-6 text-[20px] font-medium font-matrix">
                     <li>
                         <Link href="/" className="hover:text-yellow-500 font-bold">Home</Link>
                     </li>

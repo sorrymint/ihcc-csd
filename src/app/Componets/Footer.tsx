@@ -27,7 +27,7 @@ export default function Footer() {
             <div className = " flex items-center justify-evenly">
                 <div>
                     <Link href="/">
-                    <img className = "h-25 w-20"src="../images/IHCClogoNew.png" alt="IHCC logo"></img>
+                    <img className = "h-25 w-20"src="../images/CSDClubLogoGray.png" alt="IHCC logo"></img>
                     </Link>
                 </div>
                 <div className="max-sm:inline-block max-sm:pl-15 flex pl-20">

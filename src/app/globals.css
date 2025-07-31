@@ -1,4 +1,10 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: Matrix;
+    src: url(../../public/assets/MatrixtypeDisplayBold-6R4e6.ttf);
+}
+
 /* Add perspective for 3D effect */
 .perspective {
     perspective: 1200px;
@@ -21,11 +27,11 @@
 
 @theme{
 
+    --font-matrix: Matrix, "sans-serif";
     --font-ff: "Inter", "sans-serif";
-    --font-ff2: "Poppins", "sans-serif";
 
-    --h1: bold 3.75rem/4rem var(--font-ff);
-    --h2: bold 2.25rem/2.25rem var(--font-ff);
+    --h1: bold 3.75rem/4rem var(--font-matrix);
+    --h2: bold 2.25rem/2.25rem var(--font-matrix);
     --h3: bold 1.5rem/2rem var(--font-ff);
 
     --font-h1: var(--h1);
