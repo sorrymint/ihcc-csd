@@ -1,8 +1,8 @@
-export default function Page () {
+export default function Contact () {
     return(
         <div className="text-center m-[55px]">
             <h1 className="text-8xl">
-                BLOG PAGE AND FEATURES COMING SOON
+                CONTACT PAGE AND FEATURES COMING SOON
             </h1>
         </div>
     )

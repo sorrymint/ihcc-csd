@@ -1,9 +1,13 @@
-import React from 'react'
 
-export default function page() {
-  return (
-    <div className='flex justify-center items-center'>
-        <div>Events are incoming</div>
-    </div>
-  )
+
+export default function Events() {
+    
+
+    return (
+        <div className="text-center m-[55px]">
+            <h1 className="text-8xl">
+                EVENTS PAGE AND FEATURES COMING SOON
+            </h1>
+        </div>
+    )
 }

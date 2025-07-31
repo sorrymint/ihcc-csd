@@ -15,7 +15,7 @@ export default function Footer() {
             <div>
                 <br></br>
                 <a className=" flex items-center justify-center" href = "#">
-                    <p className="rounded-full p-3 pr-6 pl-6 bg-[#FFA400] text-sm  text-[#000000]">
+                    <p className="rounded-full p-3 pr-6 pl-6 bg-[#FFA400] text-sm  text-[#000000] hover:bg-yellow-500">
                     Join Here
                     </p>
                     </a>
@@ -26,17 +26,20 @@ export default function Footer() {
             </div>
             <div className = " flex items-center justify-evenly">
                 <div>
+                    <Link href="/">
                     <img className = "h-25 w-20"src="../images/IHCClogoNew.png" alt="IHCC logo"></img>
+                    </Link>
                 </div>
                 <div className="max-sm:inline-block max-sm:pl-15 flex pl-20">
                     <a href="#"><p  className="font-semibold text-[000000]">Our Mission</p></a>
-                    <a className="pr-9 pl-9" href="#"><p className="font-semibold text-[000000]">Contact Us</p></a>
+                    <Link href="/Contact" className='pr-9 pl-9 font-semibold text-[000000]'>Contact Us</Link>
                     <a href="#"><p className="font-semibold text-[000000]">About CSD</p></a>
                 </div>
                 <div className=" flex">
                     <a href="https://www.facebook.com/" target='_blank'><img className = "mt-1 h-7 w-7"src="../images/FaceBookNew.png" alt="FaceBook"></img></a>
                     <a href="https://www.instagram.com/" target='_blank'><img className = "max-sm:mr-2 max-sm:ml-2 mr-3 ml-3 mt-1 h-7 w-7"src="../images/InstagramNew.png" alt="Instagram"></img></a>
                     <a href="https://x.com/" target='_blank'><img className = "max-sm:mr-2 max-sm:ml-2 mr-3 ml-3 mt-1 h-7 w-7"src="../images/TwitterNew.png" alt="Twitter"></img></a>
+                    <a href="https://github.com/sorrymint/ihcc-csd" target='_blank'><img className = "max-sm:mr-2 max-sm:ml-2 mr-3 ml-3 mt-1 h-7 w-7"src="../images/gitHubLogo.png" alt="GitHub"></img></a>
                     <a href="https://www.linkedin.com/" target='_blank'><img className = "mt-1 h-7 w-7"src="../images/LinkedInNew.png" alt="LinkedIn"></img></a>
                 </div>
             </div>
