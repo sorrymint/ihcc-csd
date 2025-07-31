@@ -14,7 +14,7 @@ export default function NotesIndexPage() {
   const years = getYearFolders()
 
   return (
-    <div className="prose mx-auto p-6">
+    <div className="prose mx-auto p-6 flex justify-center items-center flex-col">
       <h1>Notes by Year</h1>
       <ul>
         {years.map((year) => (
