@@ -1,3 +1,4 @@
+// This is the Homepage
 "use client";
 
 import { useEffect, useState } from "react";
@@ -38,9 +39,14 @@ function HomeContent() {
                 </div>
             </div>
 
+            {/* Modified image only */}
             <div
-                className="mt-10 md:mt-0 md:ml-12 relative z-10"
-                style={{ width: "400px", height: "400px", minWidth: "300px" }}
+                className="relative z-10 mt-10 md:mt-0 md:ml-[-40px]"
+                style={{
+                    width: "480px",
+                    maxWidth: "100%",
+                    height: "auto",
+                }}
             >
                 <img
                     src="/Images/computer%20image.jpg"
@@ -61,7 +67,9 @@ function UpcomingSection() {
 
     return (
         <section className="bg-gray-50 px-6 py-16 text-black">
-            <h2 className="text-4xl font-extrabold text-center mb-12">{/*UPCOMING*/}**EVENTS PAGE AND FEATURES COMING SOON**</h2>
+            <h2 className="text-4xl font-extrabold text-center mb-12">
+                **EVENTS PAGE AND FEATURES COMING SOON**
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {[1, 2, 3].map((_, index) => (
                     <div
@@ -92,7 +100,7 @@ function UpcomingSection() {
             </div>
 
             <div className="text-center mt-8">
-                <Link href="/Events" className='bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-full shadow-md transition duration-200'>
+                <Link href="/Events" className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-full shadow-md transition duration-200">
                     View Events
                 </Link>
             </div>
@@ -162,5 +170,3 @@ export default function HomePage() {
         </div>
     );
 }
-
-
