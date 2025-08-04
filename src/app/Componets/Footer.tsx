@@ -15,7 +15,7 @@ export default function Footer() {
             <div>
                 <br></br>
                 <Link href="/Contact" className='flex items-center justify-center'>
-                    <p className='rounded-full p-3 pr-6 pl-6 bg-[#FFA400] text-sm  text-[#000000] hover:bg-yellow-500'>Join Here</p>
+                    <p className='rounded-full p-3 pr-6 pl-6 bg-yellow-400 text-sm  text-[#000000] hover:bg-yellow-500 font-bold'>Join Here</p>
                 </Link>
                 <br></br>
                 <br></br>
