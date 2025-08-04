@@ -18,7 +18,7 @@ function HomeContent() {
             style={{ minHeight: "600px" }}
         >
             <div className="max-w-xl relative z-10">
-                <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold leading-tight">
+                <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold leading-tight text-center">
                     <span className="block">COMPUTER</span>
                     <span className="block text-pink-800 italic">SOFTWARE</span>
                     <span className="block">DEVELOPMENT</span>
