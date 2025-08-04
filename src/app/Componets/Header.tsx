@@ -9,12 +9,14 @@ export default function Header() {
 
     return (
         <div>
-            <div className="w-full h-20 flex gap-30 items-center justify-between px-10 relative">
+            <div className="md:w-full h-20 flex flex-row md:gap-30 items-center justify-evenly md:justify-between md:px-10 relative">
+
                 <div>
                     <Link href="/">
-                        <img src="../images/CSDClubLogo.png" alt="somgthing" width={50} height={100}/>
+                        <img className="max-w-none" src="../images/CSDClubLogo.png" alt="somgthing" width={50} height={100}/>
                     </Link>
                 </div>
+
                 <ul className="hidden md:flex gap-6 text-[20px] font-medium font-matrix">
                     <li>
                         <Link href="/" className="hover:text-yellow-500 font-bold">Home</Link>
@@ -41,29 +43,29 @@ export default function Header() {
                 </button>
 
                 <button onClick ={() => setMenuOpen(!menuOpen)} className="md:hidden">
-                    <img className="w-[50px]" src="../images/HamburgerMenuIcon.webp" alt="Menu Icon" />
+                    <img className="w-[50px] max-w-none" src="../images/HamburgerMenuIcon.webp" alt="Menu Icon" />
                 </button>
 
                 {menuOpen && (
-                    <div className= "absolute top-20 left-0 w-full bg-white pb-[50px] z-[100] md:hidden">
-                         <ul className="flex flex-col gap-6 text-[20px] font-medium font-matrix">
+                    <div className= "absolute top-20 left-0 w-full bg-white rounded-b-lg pb-[50px] z-[100] md:hidden">
+                         <ul className="flex flex-col gap-6 text-[20px] font-medium font-matrix ml-[25px]">
                             <li>
-                                <Link href="/" className="hover:text-yellow-500 font-bold">Home</Link>
+                                <Link href="/" className="hover:text-yellow-500 font-bold" onClick={() => setMenuOpen(false)}>Home</Link>
                             </li>
                             <li>
-                                <Link href="/Blog" className="hover:text-yellow-500 font-bold">Blog</Link>
+                                <Link href="/Blog" className="hover:text-yellow-500 font-bold" onClick={() => setMenuOpen(false)}>Blog</Link>
                             </li>
                             <li>
-                                <Link href="/Notes" className="hover:text-yellow-500 font-bold">Notes</Link>
+                                <Link href="/Notes" className="hover:text-yellow-500 font-bold" onClick={() => setMenuOpen(false)}>Notes</Link>
                             </li>
                             <li>
-                                <Link href="/Events" className="hover:text-yellow-500 font-bold">Events</Link>
+                                <Link href="/Events" className="hover:text-yellow-500 font-bold" onClick={() => setMenuOpen(false)}>Events</Link>
                             </li>
                             <li>
-                                <Link href="/Contact" className="hover:text-yellow-500 font-bold">Contact</Link>
+                                <Link href="/Contact" className="hover:text-yellow-500 font-bold" onClick={() => setMenuOpen(false)}>Contact</Link>
                             </li>
                             <li>
-                                <Link href="/Alumni" className="hover:text-yellow-500 font-bold">Alumni</Link>
+                                <Link href="/Alumni" className="hover:text-yellow-500 font-bold" onClick={() => setMenuOpen(false)}>Alumni</Link>
                             </li>
                         </ul>   
                     </div>
@@ -71,7 +73,7 @@ export default function Header() {
                 }
         
           </div>
-          
+
         </div>
     )
 }
