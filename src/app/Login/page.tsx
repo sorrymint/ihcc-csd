@@ -25,7 +25,7 @@ export default function Login() {
                         </label>
                         <input
                             required
-                            className="shadow appearance-none border border-gray-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400"
+                            className="shadow appearance-none border border-gray-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white"
                             id="username"
                             type="text"
                             placeholder="Enter username"
@@ -40,7 +40,7 @@ export default function Login() {
                         </label>
                         <input
                             required
-                            className="shadow appearance-none border border-gray-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400"
+                            className="shadow appearance-none border border-gray-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white"
                             id="password"
                             type="password"
                             placeholder="Enter password"
@@ -96,7 +96,7 @@ export default function Login() {
 
                 <div className="flex items-center justify-center">
                     <button
-                        className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-6 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-300"
+                        className="bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-2 px-6 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-300"
                         type="submit"
                     >
                         Sign In
