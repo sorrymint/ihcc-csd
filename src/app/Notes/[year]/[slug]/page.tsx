@@ -72,7 +72,7 @@ export default async function NotePage({
     [&_ul]:bg-gray-200 [&_ul]:shadow-lg [&_ul]:border  [&_ul]:rounded-md [&_ul]:p-2 [&_ul]:max-w-full
     [&_ol]:bg-gray-200 [&_ol]:shadow-lg [&_ol]:border  [&_ol]:rounded-md [&_ol]:p-2  [&_ol]:m-4
     [&_li]:bg-white [&_li]:p-2 [&_li]:text-center
-    [&_a]:text-yellow-500 [&_a]:underline [&_a]:italic
+    [&_a]:text-yellow-500 [&_a]:underline [&_a]:italic [&_a:hover]:text-yellow-600
     ">
       <div className = "flex flex-col items-center p-6 mr-20 ml-20 [&>ol]:list-decimal [&>ol]:pl-6" dangerouslySetInnerHTML={{ __html: contentHtml }} />
     </div>
