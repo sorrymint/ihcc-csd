@@ -18,9 +18,9 @@ export default function NotesIndexPage() {
       <h1>Notes by Year</h1>
       <ul>
         {years.map((year) => (
-          <li key={year}>
-            <Link href={`/Notes/${year}`}>{year}</Link>
-          </li>
+            <li className='text-yellow-500 underline italic text-2xl m-4 text-center' key={year}>
+              <Link href={`/Notes/${year}`}>{year}</Link>
+            </li>
         ))}
       </ul>
     </div>

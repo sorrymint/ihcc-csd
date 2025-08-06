@@ -37,13 +37,15 @@ export default async function YearPage({
   const slugs = getSlugsForYear(year)
 
   return (
-    <div className="prose mx-auto p-6">
-      <h1>{year} Notes</h1>
+    <div className="prose mx-auto p-6 flex flex-col items-center">
+      <h1 className='underline mb-8 text-center'>{year} Notes</h1>
       <ul>
         {slugs.map((slug) => (
-          <li key={slug}>
-            <Link href={`/Notes/${year}/${slug}`}>{slug}</Link>
-          </li>
+          <div className='flex flex-col items-center'>
+            <li className='text-yellow-500 underline italic text-2xl m-3 text-center' key={slug}>
+              <Link  href={`/Notes/${year}/${slug}`}>{slug}</Link>
+            </li>
+          </div>
         ))}
       </ul>
     </div>
