@@ -3,7 +3,7 @@
 
 import { useEffect, useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
-import Link from "next/link";
+import Link from "next/link"
 
 function HomeContent() {
     const [today, setToday] = useState("");
@@ -164,6 +164,7 @@ export default function HomePage() {
         <div className="bg-black">
             <main className="flex-1 pb-8">
                 <HomeContent />
+                
                 <UpcomingSection />
                 <FAQSection />
             </main>
