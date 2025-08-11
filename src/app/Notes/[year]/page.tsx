@@ -40,8 +40,8 @@ export default async function YearPage({
     <div className="prose mx-auto p-6 flex flex-col items-center">
       <h1 className='underline mb-8 text-center'>{year} Notes</h1>
       <ul className='bg-gray-100 p-15 m-10 border'>
-        {slugs.map((slug) => (
-          <div className='flex flex-col items-center'>
+        {slugs.map((slug, index) => (
+          <div key={index} className='flex flex-col items-center'>
             <li className='text-yellow-500 underline italic text-2xl m-3 text-center hover:text-yellow-600' key={slug}>
               <Link  href={`/Notes/${year}/${slug}`}>{slug}</Link>
             </li>

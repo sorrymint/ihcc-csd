@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <div className=" bg-[#DEDEDE]">
             <div className= "">
-                <h2 className = "font-bold flex items-center justify-center text-center text-4xl text-[#701730]">Interested In Joining</h2>
+                <h2 className = "font-bold flex items-center justify-center text-center text-4xl text-[#701730]">Interested In Joining?</h2>
                  <br></br>
                  <p className = "text-sm flex items-center justify-center text-[#000000]">Everyone is welcome to join,&nbsp;
                      <a className="underline text-sm text-[000000]" href="/Events"> Click Here </a>&nbsp; to view</p>

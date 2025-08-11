@@ -48,26 +48,14 @@ export default function Header() {
 
                 {menuOpen && (
                     <div className= "absolute top-20 left-0 w-full bg-white rounded-b-lg pb-[50px] z-[100] md:hidden">
-                         <ul className="flex flex-col gap-6 text-[20px] font-medium font-matrix ml-[25px]">
-                            <li>
-                                <Link href="/" className="hover:text-yellow-500 font-bold" onClick={() => setMenuOpen(false)}>Home</Link>
-                            </li>
-                            <li>
+                         <div className="flex flex-col gap-6 text-[20px] font-medium font-matrix ml-[25px]">
+                                <Link href="/" className="hover:text-yellow-500 font-bold w-full" onClick={() => setMenuOpen(false)}>Home</Link>
                                 <Link href="/Blog" className="hover:text-yellow-500 font-bold" onClick={() => setMenuOpen(false)}>Blog</Link>
-                            </li>
-                            <li>
                                 <Link href="/Notes" className="hover:text-yellow-500 font-bold" onClick={() => setMenuOpen(false)}>Notes</Link>
-                            </li>
-                            <li>
                                 <Link href="/Events" className="hover:text-yellow-500 font-bold" onClick={() => setMenuOpen(false)}>Events</Link>
-                            </li>
-                            <li>
                                 <Link href="/Contact" className="hover:text-yellow-500 font-bold" onClick={() => setMenuOpen(false)}>Contact</Link>
-                            </li>
-                            <li>
                                 <Link href="/Alumni" className="hover:text-yellow-500 font-bold" onClick={() => setMenuOpen(false)}>Alumni</Link>
-                            </li>
-                        </ul>   
+                        </div>
                     </div>
                 )
                 }

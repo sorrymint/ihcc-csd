@@ -110,15 +110,26 @@ function UpcomingSection() {
 
 function FAQSection() {
     const faqs = [
-        "How is your day?",
-        "How is your energy?",
-        "What are you learning?",
-        "Did you sleep well?",
-        "Are you motivated?",
-        "What challenges today?",
-        "What excites you?",
-        "What do you need?",
+        "Do I need prior coding experience to join the club?",
+        "What type of projects will I work on in my first few terms?",
+        "How much time should I expect to commit each week?",
+        "Will I get help if I'm stuck on an assignment or project?",
+        "What tools and software do I need to install?",
+        "How can this club help me prepare for internships or future careers?",
+        "Do I need an expensive computer to start programming?",
+        "Who would win in a programmer-off, Susan and Luke or James and Jarrett????",
     ];
+
+    const answers = [
+        "No prior experience is required! Our club is designed to support students at all skill levels — whether you're starting from scratch or already have some background. We provide workshops and peer support to help you learn step-by-step.",
+        "You'll typically work on small, hands-on projects such as personal websites, simple games, or basic web apps. These projects help you learn core programming concepts, teamwork, and practical problem-solving skills.",
+        "Most students spend about 3-5 hours per week on club-related activities like workshops, coding meetups, and projects. You'll also want to set aside additional practice time outside of class, which can vary depending on how many courses you're taking and your personal schedule.",
+        "Absolutely! We host office hours, peer coding sessions, and a Discord/Slack community where you can ask questions anytime. Upper-term members are happy to mentor and share tips. We also have tutors available from 12-1 PM for additional one-on-one help.",
+        "You'll need a code editor (like VS Code), Git for version control, and a browser like Chrome or Firefox for testing web apps. Other classes will need other software but we'll walk you through setting everything up during classes intro sessions.",
+        "Our club builds real-world skills by teaching collaborative development, object-oriented programming, version control (Git/GitHub), and portfolio-building projects that follow modern industry standards. We also host peer-led sessions — including projects like the one that built this website — and share resume tips, interview prep, and networking opportunities with alumni and industry professionals.",
+        "Not at all! Most beginner programming work can be done on a basic laptop or desktop that can run a modern web browser and a code editor like VS Code. If your computer can handle everyday tasks like browsing the internet or streaming video, it's likely good enough for coding. As you progress into more advanced areas (like game development or machine learning), you might want more power, but for getting started, any reliable computer works.",
+        "Ah, the Clash of the Semi-Colons™ — where Susan's clean code style meets Luke's lightning-fast debugging, going head-to-head with James' algorithm wizardry and Jarrett's relentless caffeine-fueled commits. Honestly? It'd probably end in a merge conflict… and a pizza party."
+    ]
 
     const [openIndex, setOpenIndex] = useState<number | null>(null);
 
@@ -129,7 +140,7 @@ function FAQSection() {
     return (
         <section className="bg-gray-100 max-w-6xl mx-auto mt-8 rounded-lg shadow-lg p-6 pb-20">
             <h2 className="text-4xl font-extrabold text-center mb-10">
-                FREQUENTLY ASKED QUESTIONS **COMING SOON**
+                FREQUENTLY ASKED QUESTIONS
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -149,7 +160,7 @@ function FAQSection() {
                         </button>
                         {openIndex === index && (
                             <div className="px-5 pb-4 text-sm text-gray-700">
-                                This is where the dropdown answer will appear. **COMING SOON**
+                                {answers[index]}
                             </div>
                         )}
                     </div>
