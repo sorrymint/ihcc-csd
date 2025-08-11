@@ -1,9 +1,9 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+//import { useRouter } from "next/navigation";
 
 export default function Login() {
-    const router = useRouter();
+    //const router = useRouter();
 
     // Placeholder Google login handler (replace with real OAuth logic)
     const handleGoogleLogin = () => {
