@@ -4,8 +4,8 @@
 
 ### Club Website
 
-A group of students as been meeting each week to work on the club website. 
-They might want to give an update on their progress. 
+A group of students as been meeting each week to work on the club website.
+They might want to give an update on their progress.
 
 * Time: 3pm
 * Where: ATC 200
@@ -13,13 +13,13 @@ They might want to give an update on their progress.
 
 ### Game Night
 
-Last Game night was I failer. 
-We want this next one to be a success. 
-What can we do to with the next game night? 
+Last Game night was I failer.
+We want this next one to be a success.
+What can we do to with the next game night?
 
-* When:
+* When: July 1st 3pm
 * Where: ATC 200
-* What Game:
+* What Game: ?
 
 ### 2025-2026 Club Schedule
 
@@ -32,13 +32,14 @@ The finalized schedule will be sent to marketing.
 
 Has there been any update on planning hte 2025-2026 Club Schedule?
 
-###  Personal Project Planning
+### Personal Project Planning
 
-I want you all to make a person project. It has to be something built outside of class that you would be proud of and put on your resume.
+I want you all to make a person project. It has to be something built outside of class that you would be proud of and
+put on your resume.
 Over the summer I want you all to plan this project.
-We have 6 club meeting. 
+We have 6 club meeting.
 I have come up with a 6-step plan we will be going though.
-We are going to cover this during the club meeting, but you **MUST** work on this outside of these meeting to keep up. 
+We are going to cover this during the club meeting, but you **MUST** work on this outside of these meeting to keep up.
 This is to get them excited and motivated to build your personal project later. Here is my ideas so
 far please add to it and make it take up the six club meetings.
 
@@ -47,38 +48,40 @@ far please add to it and make it take up the six club meetings.
 3. High Resolution wireframe / Integrative demo
 4. Pick Tech Stack
 5. UML for Database
-6. Project Roadmap, Environment Setup, and Discovery 
+6. Project Roadmap, Environment Setup, and Discovery
 
 #### Personal Project Planning Step 2
 
-Feature List: 
+Feature List:
 
 This step is easy.
-You need to think about all the features you want your app to have. 
-Let's use a To-Do list as an example. 
+You need to think about all the features you want your app to have.
+Let's use a To-Do list as an example.
 
 1. User to see tasks
-2. User be able to Perform CRUD on tasks. 
+2. User be able to Perform CRUD on tasks.
 3. Task data to have persistence (Database).
 4. The app to be hosted
-5. Each user have their own todo list. 
+5. Each user have their own todo list.
 6. Stretch goal a "+" plan with extra features (shared lists).
 
-You don't need to go into deep detail into the technical aspect on how you will build each feature. 
-Just know you can always increase the scope of the project later. 
-Go into detail of each feature and build a user story for each. 
+You don't need to go into deep detail into the technical aspect on how you will build each feature.
+Just know you can always increase the scope of the project later.
+Go into detail of each feature and build a user story for each.
 
-Example: 
+Example:
+
 - Task data to have persistence (Database).
-  - User logs into the app. The user adds a new task to the To-do list. User leaves app. User logs back into the app and the task is still present. 
+    - User logs into the app. The user adds a new task to the To-do list. User leaves app. User logs back into the app
+      and the task are still present.
 
-Rough Wireframe: 
+Rough Wireframe:
 
-On pin and paper sketch out what you think the app should look like. 
-Focus on the site routing and site layout. 
-Don't focus on color, fonts, or styling. 
-Make sure each feature outlined in the step before is represented. 
-Do not speed a long time on the rough sketch we will improve on it next time. 
+On pin and paper sketch out what you think the app should look like.
+Focus on the site routing and site layout.
+Don't focus on color, fonts, or styling.
+Make sure each feature outlined in the step before is represented.
+Do not speed a long time on the rough sketch we will improve on it next time.
 
 ### Remainder Summer Schedule
 
@@ -89,7 +92,7 @@ Below is the schedule for all club meeting for summer term.
 - July 30th
 - August 6th
 
-## Meeting Minutes 
+## Meeting Minutes
 
 ### Lucas Starts Meeting
 - talks about game night
@@ -104,7 +107,6 @@ Below is the schedule for all club meeting for summer term.
 - Feature List
 
 ### Lucas CLoses Up Meeting
-
 
 ## Attendance 
 
