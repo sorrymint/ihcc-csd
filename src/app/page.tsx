@@ -1,103 +1,184 @@
-import Image from "next/image";
+// This is the Homepage
+"use client";
 
-export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+import { useEffect, useState } from "react";
+import { ChevronDownIcon } from "@heroicons/react/24/outline";
+import Link from "next/link"
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+function HomeContent() {
+    const [today, setToday] = useState("");
+
+    useEffect(() => {
+        setToday("Wed");
+    }, []);
+
+    return (
+        <section
+            className="px-6 sm:px-8 py-16 md:flex items-center justify-between bg-black text-white relative"
+            style={{ minHeight: "600px" }}
+        >
+            <div className="max-w-xl relative z-10">
+                <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold leading-tight text-center">
+                    <span className="block">COMPUTER</span>
+                    <span className="block text-pink-800 italic">SOFTWARE</span>
+                    <span className="block">DEVELOPMENT</span>
+                </h1>
+                <div className="mt-10 flex items-center space-x-4 bg-gray-200 text-black p-4 rounded-xl w-fit shadow-lg">
+                    <div className="bg-white rounded-lg px-4 py-2 text-center shadow-md">
+                        <p className="text-sm font-semibold text-gray-500">{today}</p>
+                        <p className="text-xl font-bold">12:00</p>
+                    </div>
+                    <div>
+                        <h3 className="text-lg font-bold text-pink-800">Bi-weekly Meeting</h3>
+                        <p className="text-sm">
+                            Advance Technology Center
+                            <br />
+                            Room: 200
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            {/* Modified image only */}
+            <div
+                className="relative z-10 mt-10 md:mt-0 md:ml-[-40px]"
+                style={{
+                    width: "480px",
+                    maxWidth: "100%",
+                    height: "auto",
+                }}
+            >
+                <img
+                    src="/Images/computer%20image.jpg"
+                    alt="Macbook"
+                    className="rounded-lg shadow-2xl w-full h-full object-contain animate-rotateY"
+                />
+            </div>
+        </section>
+    );
+}
+
+function UpcomingSection() {
+    const [today, setToday] = useState("");
+
+    useEffect(() => {
+        setToday("Wed");
+    }, []);
+
+    return (
+        <section className="bg-gray-50 px-6 py-16 text-black">
+            <h2 className="text-4xl font-extrabold text-center mb-12">
+                **EVENTS PAGE AND FEATURES COMING SOON**
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {[1, 2, 3].map((_, index) => (
+                    <div
+                        key={index}
+                        className="bg-white text-black rounded-2xl shadow-md overflow-hidden"
+                    >
+                        <img
+                            src="/Images/event%20image.png"
+                            alt="Event"
+                            className="w-full h-48 object-cover"
+                        />
+                        <div className="flex items-start p-4">
+                            <div className="bg-pink-100 text-black px-3 py-2 rounded-lg shadow-sm text-center mr-4">
+                                <p className="text-xs font-semibold text-gray-600">{today}</p>
+                                <p className="text-xl font-bold">12:00</p>
+                            </div>
+                            <div>
+                                <h3 className="text-lg font-bold text-pink-800">Bi-weekly Meeting</h3>
+                                <p className="text-sm text-gray-700">
+                                    Advance Technology Center
+                                    <br />
+                                    Room: 200
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+
+            <div className="text-center mt-8">
+                <Link href="/Events" className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-full shadow-md transition duration-200">
+                    View Events
+                </Link>
+            </div>
+        </section>
+    );
+}
+
+function FAQSection() {
+    const faqs = [
+        "Do I need prior coding experience to join the club?",
+        "What type of projects will I work on in my first few terms?",
+        "How much time should I expect to commit each week?",
+        "Will I get help if I'm stuck on an assignment or project?",
+        "What tools and software do I need to install?",
+        "How can this club help me prepare for internships or future careers?",
+        "Do I need an expensive computer to start programming?",
+        "Who would win in a programmer-off, Susan and Luke or James and Jarrett????",
+    ];
+
+    const answers = [
+        "No prior experience is required! Our club is designed to support students at all skill levels — whether you're starting from scratch or already have some background. We provide workshops and peer support to help you learn step-by-step.",
+        "You'll typically work on small, hands-on projects such as personal websites, simple games, or basic web apps. These projects help you learn core programming concepts, teamwork, and practical problem-solving skills.",
+        "Most students spend about 3-5 hours per week on club-related activities like workshops, coding meetups, and projects. You'll also want to set aside additional practice time outside of class, which can vary depending on how many courses you're taking and your personal schedule.",
+        "Absolutely! We host office hours, peer coding sessions, and a Discord/Slack community where you can ask questions anytime. Upper-term members are happy to mentor and share tips. We also have tutors available from 12-1 PM for additional one-on-one help.",
+        "You'll need a code editor (like VS Code), Git for version control, and a browser like Chrome or Firefox for testing web apps. Other classes will need other software but we'll walk you through setting everything up during classes intro sessions.",
+        "Our club builds real-world skills by teaching collaborative development, object-oriented programming, version control (Git/GitHub), and portfolio-building projects that follow modern industry standards. We also host peer-led sessions — including projects like the one that built this website — and share resume tips, interview prep, and networking opportunities with alumni and industry professionals.",
+        "Not at all! Most beginner programming work can be done on a basic laptop or desktop that can run a modern web browser and a code editor like VS Code. If your computer can handle everyday tasks like browsing the internet or streaming video, it's likely good enough for coding. As you progress into more advanced areas (like game development or machine learning), you might want more power, but for getting started, any reliable computer works.",
+        "Ah, the Clash of the Semi-Colons™ — where Susan's clean code style meets Luke's lightning-fast debugging, going head-to-head with James' algorithm wizardry and Jarrett's relentless caffeine-fueled commits. Honestly? It'd probably end in a merge conflict… and a pizza party."
+    ]
+
+    const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+    const toggle = (index: number) => {
+        setOpenIndex(index === openIndex ? null : index);
+    };
+
+    return (
+        <section className="bg-gray-100 max-w-6xl mx-auto mt-8 rounded-lg shadow-lg p-6 pb-20">
+            <h2 className="text-4xl font-extrabold text-center mb-10">
+                FREQUENTLY ASKED QUESTIONS
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {faqs.map((question, index) => (
+                    <div key={index} className="bg-white rounded-lg shadow-sm">
+                        <button
+                            type="button"
+                            className="w-full flex justify-between items-center p-5 rounded-lg text-left hover:bg-gray-100 transition"
+                            onClick={() => toggle(index)}
+                        >
+                            <span className="text-base font-medium text-gray-800">{question}</span>
+                            <ChevronDownIcon
+                                className={`h-5 w-5 text-black transition-transform duration-300 ${
+                                    openIndex === index ? "rotate-180" : ""
+                                }`}
+                            />
+                        </button>
+                        {openIndex === index && (
+                            <div className="px-5 pb-4 text-sm text-gray-700">
+                                {answers[index]}
+                            </div>
+                        )}
+                    </div>
+                ))}
+            </div>
+        </section>
+    );
+}
+
+export default function HomePage() {
+    return (
+        <div className="bg-black">
+            <main className="flex-1 pb-8">
+                <HomeContent />
+                
+                <UpcomingSection />
+                <FAQSection />
+            </main>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    );
 }
