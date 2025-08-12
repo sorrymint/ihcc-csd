@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link"
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Header() {
 
@@ -12,7 +13,8 @@ export default function Header() {
 
                 <div>
                     <Link href="/">
-                        <img className="max-w-none" src="../images/CSDClubLogo.png" alt="somgthing" width={50} height={100}/>
+                        {/*TODO THIS SHOULD NOT BE AN IMAGE CHANGE TO SVG*/}
+                        <Image className="max-w-none" src="/Images/CSDClubLogo.png" alt="CSD Club Logo" width={50} height={50} />
                     </Link>
                 </div>
 
@@ -42,7 +44,8 @@ export default function Header() {
                 </button>
 
                 <button onClick ={() => setMenuOpen(!menuOpen)} className="md:hidden">
-                    <img className="w-[50px] max-w-none" src="../images/HamburgerMenuIcon.webp" alt="Menu Icon" />
+                    {/*TODO THIS SHOULD NOT BE AN IMAGE CHANGE TO SVG*/}
+                    <Image className="w-[50px] max-w-none" src="/Images/HamburgerMenuIcon.webp" width={2} height={2} alt="Menu Icon" />
                 </button>
 
                 {menuOpen && (
