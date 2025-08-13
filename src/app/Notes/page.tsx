@@ -18,7 +18,7 @@ export default function NotesIndexPage() {
       <h1 className='text-nowrap'>Notes by Year</h1>
       <ul className='bg-gray-100 p-20 m-10 border'>
         {years.map((year) => (
-            <li className='text-yellow-500 underline italic text-2xl m-4 text-center hover:text-yellow-600' key={year}>
+            <li className='text-yellow-500 underline italic text-2xl m-4 text-center hover:text-yellow-600 bg-var(--gray-750)' key={year}>
               <Link href={`/Notes/${year}`}>{year}</Link>
             </li>
         ))}
