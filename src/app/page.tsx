@@ -4,6 +4,7 @@
 import { useEffect, useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import Link from "next/link"
+import CountdownTimer from "./Components/CountdownTimer";
 
 function HomeContent() {
     const [today, setToday] = useState("");
@@ -170,11 +171,37 @@ function FAQSection() {
     );
 }
 
+function HeroSection (){
+
+    const countdownDate = new Date('2025-08-30T23:18:07')
+    return (
+        <div className={"bg-[url('/Images/LaptopBackground1.png')] h-[100vh] bg-no-repeat bg-contain bg-center "}>
+            <div className="pl-[5%]">
+                <h1 className="!m-0 !text-4xl text-(--text-invert) pt-[16vh] md:pt-[20vh] md:!text-5xl lg:pt-[24vh]" >COMPUPTER <span
+                className="block text-(--purple)">SOFTWARE</span> DEVELOPMENT</h1>
+
+                <div className="pt-[12rem] md:pt-[20vh] lg:pt-[20vh] ">
+                    <CountdownTimer
+                    deadline={countdownDate}
+                    title="Club Meeting"
+                    category="Upcomming Events"/>
+                    
+                </div>
+            </div>
+
+        </div>
+    )
+}
+
+// top-40 -right-40 bg-(--bg-black)
+
 export default function HomePage() {
     return (
         <div className="bg-black">
             <main className="flex-1 pb-8">
-                <HomeContent />
+
+                <HeroSection/>
+                {/* <HomeContent /> */}
                 
                 <UpcomingSection />
                 <FAQSection />
