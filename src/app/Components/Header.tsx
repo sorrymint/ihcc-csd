@@ -67,7 +67,7 @@ export default function Header() {
                 <Link href="/">
                   <img
                     className=""
-                    src="../images/Logo6-removebg-preview.png"
+                    src="../images/CSDClubLogo-removebg-preview.png"
                     alt="somgthing"
                     width={40}
                     height={100}
@@ -92,7 +92,7 @@ export default function Header() {
             </div>
 
             <button
-              className={`bg-(--yellow) hover:bg-(--yellow)/70 text-black font-semibold  rounded-3xl h-fit  px-[20px] py-[4px] mr-4`}
+              className={`bg-(--yellow) hover:bg-(--yellow)/70 text-(--text-base) font-semibold  rounded-3xl h-fit  px-[20px] py-[4px] mr-4`}
             >
               <Link href="/Login"> Login </Link>
             </button>
@@ -138,7 +138,7 @@ export default function Header() {
   //               className="max-w-none"
   //               src="../images/CSDClubLogo.png"
   //               alt="somgthing"
-  //               width={50}
+  //               width={50}F
   //               height={100}
   //             />
   //           </Link>
