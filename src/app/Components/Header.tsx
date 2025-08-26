@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 export default function Header() {
   // For moblie
@@ -43,7 +44,7 @@ export default function Header() {
 
   return (
     <nav
-      className={`fixed md:w-full w-full  transition-transform duration-300 z-50 ${
+      className={`fixed w-full  transition-transform duration-300 z-50 ${
         isVisible ? "transition-y-0" : "-translate-y-full"
       }  `}
     >
@@ -65,12 +66,12 @@ export default function Header() {
               </button>
               <div className="flex items-cente ">
                 <Link href="/">
-                  <img
+                  <Image
                     className=""
-                    src="../images/CSDClubLogo-removebg-preview.png"
-                    alt="somgthing"
+                    src="/images/CSDClubLogo-removebg-preview.png"
+                    alt="Computer Software Development Club Logo"
                     width={40}
-                    height={100}
+                    height={40}
                   />
                 </Link>
               </div>
