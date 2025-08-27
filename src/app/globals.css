@@ -82,13 +82,15 @@
 
 
 h1{
-    font: var(--h2);
+    font: var(--h1);
     margin-top: 0.5rem;
+
 }
 
 h2{
     font: var(--h2);
     margin-top: 0.5rem;
+
 }
 
 h3{
