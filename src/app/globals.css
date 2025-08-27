@@ -39,7 +39,19 @@
     /* Accents */
     --purple:       #701730;
     --yellow:       #FFA400;
+    --yellow2:      #FBFF00;
     --yellow-light: #FFC886;
+
+    /* Gradients */
+    --gradient-angle: 155deg;
+    --gradient-from: var(--yellow2); /* Tailwind yellow */
+    --gradient-to: var(--yellow);   /* Tailwind purple */
+
+    --YtoP-gradient: linear-gradient(155deg,var(var(--yellow)) 0%, var(var(var(--purple))) 100%);
+
+    --corrent-gradient: linear-gradient(var(--gradient-angle),var(--gradient-from),var(--gradient-to));
+
+    --my-gradient: linear-gradient(to right, #05a8d9, #e62879);
 
     --text-light: var(--gray-750);
     --text-base: var(--gray-800);

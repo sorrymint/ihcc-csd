@@ -67,10 +67,10 @@ function UpcomingSection() {
     }, []);
 
     return (
-        <section className="bg-gray-50 px-6 py-16 text-black">
-            <h2 className="text-4xl font-extrabold text-center mb-12">
-                **EVENTS PAGE AND FEATURES COMING SOON**
-            </h2>
+        <section className="bg-gray-50 px-6 py-16 text-black h-screen flex items-center flex-col gap-5">
+            <h3 className="!text-5xl !text-(--text-base) font-extrabold text-center mb-12">
+                Upcoming Events
+            </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {[1, 2, 3].map((_, index) => (
                     <div
@@ -101,7 +101,9 @@ function UpcomingSection() {
             </div>
 
             <div className="text-center mt-8">
-                <Link href="/Events" className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-full shadow-md transition duration-200">
+                <Link 
+                href="/Events" 
+                className="bg-(--yellow) hover:bg-yellow-500 text-black font-semibold px-24 py-3 rounded-full shadow-md transition duration-200">
                     View Events
                 </Link>
             </div>
