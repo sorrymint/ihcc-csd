@@ -9,19 +9,17 @@ export default function Footer() {
           Interested In Joining?
         </h2>
 
-        <p className="hidden md:block text-sm text-center text-[#000000] mt-5">
+        <p className="hidden md:block text-sm text-center text-[--text-base] mt-5">
           Everyone is welcome to join,{" "}
-          <a className="underline text-sm text-[000000]" href="/Events">
+          <a className="underline text-sm text-(--yellow2)/90" href="/Events">
             Click Here
           </a>{" "}
           to view upcoming events.
         </p>
 
-        <div 
-        className="flex items-center justify-center mt-5">
+        <div className="flex items-center justify-center mt-5">
           <br></br>
-          <button 
-          className="rounded-full p-3 pr-6 pl-6 bg-(--yellow) 0%, rgba(255, 164, 0, 1) 100%);] text-sm text-(--text-base)  font-bold shadow-lg cursor-pointer tracking-[1.5px] uppercase transition-all duration-150 ease-linear hover:tracking-[3px] hover:bg-(--yellow-light) ">
+          <button className="rounded-full p-3 pr-6 pl-6 bg-(--yellow) text-sm text-(--text-base)  font-bold shadow-lg cursor-pointer tracking-[1.5px] uppercase transition-all duration-150 ease-linear hover:tracking-[3px] hover:bg-(--yellow2) hover:shadow-[0_7px_29px_0px_var(--yellow2)] active:tracking-[3px] active:bg-(--yellow2) active:shadow-[0_0px_0px_0px_var(--yellow2)] active:translate-y-[5px] active:duration-100">
             <Link href="/Contact">Join Here</Link>
           </button>
         </div>
@@ -30,10 +28,10 @@ export default function Footer() {
           <div className="hidden md:block">
             <Link href="/">
               <Image
-                className="h-25 w-20"
-                src="/images/CSDClubLogoGray.png"
-                alt="IHCC logo"
-                width={20}
+                className=""
+                src="/images/CSDClubLogo-removebg-preview.png"
+                alt="Computer Software Development Club Logo"
+                width={95}
                 height={25}
               />
             </Link>
@@ -106,9 +104,9 @@ export default function Footer() {
             </a>
           </div>
 
-          <p className="text-sm text-center text-[#000000] px-5 pb-5 md:hidden">
+          <p className="text-sm text-center text-(--text-base) px-5 pb-5 md:hidden">
             Everyone is welcome to join,{" "}
-            <a className="underline text-sm text-(--yellow)/80" href="/Events">
+            <a className="underline text-sm text-(--yellow2)/90" href="/Events">
               Click Here
             </a>{" "}
             to view upcoming events.
