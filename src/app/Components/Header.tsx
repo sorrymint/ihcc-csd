@@ -40,6 +40,7 @@ export default function Header() {
     { href: "/Events", label: "Events" },
     { href: "/Contact", label: "Contact" },
     { href: "/Alumni", label: "Alumni" },
+    { href: "/Podcast", label: "Podcast"}
   ];
 
   return (
