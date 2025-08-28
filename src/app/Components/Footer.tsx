@@ -29,7 +29,7 @@ export default function Footer() {
             <Link href="/">
               <Image
                 className=""
-                src="/images/CSDClubLogo-removebg-preview.png"
+                src="/images/CSDClubLogo-removebg-preview.svg"
                 alt="Computer Software Development Club Logo"
                 width={95}
                 height={25}

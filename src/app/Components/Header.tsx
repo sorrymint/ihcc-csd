@@ -72,7 +72,7 @@ export default function Header() {
                 <Link href="/">
                   <Image
                     className=""
-                    src="/images/CSDClubLogo-removebg-preview.png"
+                    src="/images/CSDClubLogo-removebg-preview.svg"
                     alt="Computer Software Development Club Logo"
                     width={40}
                     height={40}

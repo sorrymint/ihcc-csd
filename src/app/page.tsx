@@ -69,15 +69,16 @@ function UpcomingSection() {
   }, []);
 
   return (
-    <section className="bg-gray-50 px-6 py-16 text-black h-screen flex items-center flex-col gap-5 overflow-scroll">
+    <section className="bg-gray-50 px-6 py-16 text-black h-screen flex items-center flex-col gap-5">
       <h3 className="!text-5xl !text-(--text-base) font-extrabold text-center mb-12">
         Upcoming Events
       </h3>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className=" overflow-scroll">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
         {[1, 2, 3].map((_, index) => (
           <div
             key={index}
-            className="bg-white text-black rounded-2xl shadow-md overflow-hidden"
+            className="bg-white text-black rounded-2xl shadow-md"
           >
             <img
               src="/Images/event%20image.png"
@@ -103,11 +104,12 @@ function UpcomingSection() {
           </div>
         ))}
       </div>
+      </div>
 
       <div className="text-center mt-8">
         <Link
           href="/Events"
-          className="bg-(--yellow) hover:bg-yellow-500 text-black font-semibold px-24 py-3 rounded-full shadow-md transition duration-200"
+          className="px-24 py-3 rounded-full bg-(--yellow) text-sm text-(--text-base)  font-bold shadow-lg cursor-pointer tracking-[1.5px] uppercase transition-all duration-150 ease-linear hover:tracking-[2px] hover:bg-(--yellow2) hover:shadow-[0_7px_29px_0px_var(--yellow2)] active:tracking-[2px] active:bg-(--yellow2) active:shadow-[0_0px_0px_0px_var(--yellow2)] active:translate-y-[5px] active:duration-100"
         >
           View Events
         </Link>
