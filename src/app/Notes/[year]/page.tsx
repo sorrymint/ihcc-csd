@@ -75,7 +75,7 @@ export default async function YearPage({
 
               <Link
                 href={`/Notes/${year}/${slug}`}
-                className="bg-(--yellow) px-5 py-5 rounded-full shadow-lg shadow-neutral-400"
+                className="bg-(--yellow) px-5 py-5 rounded-full shadow-lg cursor-pointer tracking-[1px] uppercase transition-all duration-150 ease-linear hover:tracking-[2px] hover:bg-(--yellow2) hover:shadow-[0_5px_16px_0px_var(--yellow2)] active:tracking-[3px] active:bg-(--yellow2) active:shadow-[0_0px_0px_0px_var(--yellow2)] active:translate-y-[5px] active:duration-100"
               >
                 <MoveRight color="white" strokeWidth={3} />
               </Link>

@@ -60,23 +60,26 @@ export default function Header() {
                 className=" md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hovergray-900 hover:bg-gray-100 focus:outline-none "
               >
                 {!menuOpen ? (
-                  <Menu className="text-3xl " strokeWidth={3} color={"#0D0D0D"} />
+                  <Menu
+                    className="text-3xl "
+                    strokeWidth={3}
+                    color={"#0D0D0D"}
+                  />
                 ) : (
                   <X className="text-3xl " strokeWidth={3} color={"#0D0D0D"} />
                 )}
               </button>
-              <div className="flex items-cente ">
+              <div className="flex items-center ">
                 <Link href="/">
                   <Image
                     className=""
-                    src="/images/CSDClubLogo-removebg-preview.png"
+                    src="/images/CSDClubLogo-removebg-preview.svg"
                     alt="Computer Software Development Club Logo"
                     width={40}
                     height={40}
                   />
                 </Link>
               </div>
-
             </div>
 
             <div className="hidden md:flex items-center space-x-2 lg:space-x-6">
@@ -92,12 +95,14 @@ export default function Header() {
                 </Link>
               ))}
             </div>
-
+            <div
+            className=" w-24">
             <button
-              className={`bg-[var(--yellow)] hover:bg-(--YtoP-gradient)/70 text-(--text-base) font-semibold  rounded-3xl h-fit  px-[20px] py-[4px] mr-4`}
+              className={` rounded-3xl h-fit  px-[20px] py-[4px]  bg-(--yellow) text-sm text-(--text-base)  font-semibold shadow-lg cursor-pointer tracking-[1px] uppercase transition-all duration-150 ease-linear hover:tracking-[2px] hover:bg-(--yellow2) hover:shadow-[0_5px_16px_0px_var(--yellow2)] active:tracking-[3px] active:bg-(--yellow2) active:shadow-[0_0px_0px_0px_var(--yellow2)] active:translate-y-[5px] active:duration-100 `}
             >
               <Link href="/Login"> Login </Link>
             </button>
+            </div>
           </div>
         </div>
       </div>
