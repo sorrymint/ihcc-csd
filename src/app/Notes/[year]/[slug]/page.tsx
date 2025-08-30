@@ -90,7 +90,7 @@ export default async function NotePage({
 
     [&_h4]:text-xl
 
-    [&_p]:text-xl [&_p]:font-normal [&_p]:!font-(family-name:--font-ff) [&_p]:text-(--text-base)/85 
+    [&_p]:text-xl [&_p]:font-normal [&_p]:!font-(family-name:--font-ff) [&_p]:text-(--text-base)/85 [&_p]:text-wrap [&_p]:overflow-clip
 
     [&_ul]:mt-2 [&_ul]:mb-4
 
@@ -104,7 +104,7 @@ export default async function NotePage({
     "
         >
           <div
-            className="flex flex-col items-center[&>ol]:list-decimal [&>ol]:pl-6 px-8 md:px-16 lg:px-20"
+            className="flex flex-col items-center[&>ol]:list-decimal [&>ol]:pl-6 px-8 md:px-16 lg:px-20 "
             dangerouslySetInnerHTML={{ __html: contentHtml }}
           />
         </div>

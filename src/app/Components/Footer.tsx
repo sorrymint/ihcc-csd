@@ -11,15 +11,21 @@ export default function Footer() {
 
         <p className="hidden md:block text-sm text-center text-[--text-base] mt-5">
           Everyone is welcome to join,{" "}
-          <a className="underline text-sm text-(--yellow2)/90" href="/Events">
+          <Link
+            className="underline text-sm text-(--yellow2)/90"
+            href="/Events"
+          >
             Click Here
-          </a>{" "}
+          </Link>{" "}
           to view upcoming events.
         </p>
 
         <div className="flex items-center justify-center mt-5">
           <br></br>
-          <button className="rounded-full p-3 pr-6 pl-6 bg-(--yellow) text-sm text-(--text-base)  font-bold shadow-lg cursor-pointer tracking-[1.5px] uppercase transition-all duration-150 ease-linear hover:tracking-[3px] hover:bg-(--yellow2) hover:shadow-[0_7px_29px_0px_var(--yellow2)] active:tracking-[3px] active:bg-(--yellow2) active:shadow-[0_0px_0px_0px_var(--yellow2)] active:translate-y-[5px] active:duration-100">
+          <button
+            className="rounded-full p-3 pr-6 pl-6 bg-(--yellow) text-sm text-(--text-base)  font-bold shadow-lg cursor-pointer tracking-[1.5px] uppercase transition-all duration-150 ease-linear hover:tracking-[3px] hover:bg-(--yellow2) hover:shadow-[0_7px_29px_0px_var(--yellow2)] active:tracking-[3px] active:bg-(--yellow2) active:shadow-[0_0px_0px_0px_var(--yellow2)] active:translate-y-[5px] active:duration-100"
+            title="Join"
+          >
             <Link href="/Contact">Join Here</Link>
           </button>
         </div>
@@ -33,6 +39,7 @@ export default function Footer() {
                 alt="Computer Software Development Club Logo"
                 width={95}
                 height={25}
+                title="Home"
               />
             </Link>
           </div>
@@ -57,58 +64,70 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-row justify-evenly mb-15 md:mb-0 items-center">
-            <a href="https://www.facebook.com/" target="_blank">
+            <Link href="https://www.facebook.com/" target="_blank">
               <Image
                 className="h-7 mx-2"
                 src="/images/FaceBookNew.png"
                 alt="FaceBook"
                 width={28}
                 height={7}
+                title="Facebook"
               />
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
+            </Link>
+            <Link href="https://www.instagram.com/" target="_blank">
               <Image
                 className="h-7 mx-2"
                 src="/images/InstagramNew.png"
                 alt="Instagram"
                 width={28}
                 height={7}
+                title="Instagram"
               />
-            </a>
-            <a href="https://x.com/" target="_blank">
+            </Link>
+            <Link href="https://x.com/" target="_blank">
               <Image
                 className="h-7 mx-2"
                 src="/images/TwitterNew.png"
                 alt="Twitter"
                 width={28}
                 height={7}
+                title="Twitter"
               />
-            </a>
-            <a href="https://github.com/sorrymint/ihcc-csd" target="_blank">
+            </Link>
+            <Link href="https://github.com/sorrymint/ihcc-csd" target="_blank">
               <Image
                 className="h-7 mx-2"
                 src="/images/gitHubLogo.png"
                 alt="GitHub"
                 width={28}
                 height={7}
+                title="Github"
               />
-            </a>
-            <a href="https://www.linkedin.com/" target="_blank">
+            </Link>
+            <Link href="https://www.linkedin.com/" target="_blank">
               <Image
                 className="h-7 mx-2"
                 src="/images/LinkedInNew.png"
                 alt="LinkedIn"
                 width={28}
                 height={7}
+                title="LinkedIn"
               />
-            </a>
+            </Link>
           </div>
 
           <p className="text-sm text-center text-(--text-base) px-5 pb-5 md:hidden">
             Everyone is welcome to join,{" "}
-            <a className="underline text-sm text-(--yellow2)/90" href="/Events">
-              Click Here
-            </a>{" "}
+            <span
+            title="View Events">
+              <Link
+                className="underline text-sm text-(--yellow2)/90"
+                href="/Events"
+                title="View Events"
+              >
+                Click Here
+              </Link>
+            </span>{" "}
             to view upcoming events.
           </p>
         </div>
