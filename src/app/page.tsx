@@ -75,7 +75,7 @@ function UpcomingSection() {
         Upcoming Events
       </h3>
       <div className=" overflow-scroll px-5 py-5">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
+        <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8 ">
           {[1, 2, 3].map((_, index) => (
             <div
               key={index}
@@ -85,10 +85,10 @@ function UpcomingSection() {
                 src="/Images/event%20image.png"
                 alt="Event"
                 className="w-full h-48 object-cover"
-                width={50}
+                width={100}
                 height={48}
               />
-              <div className="flex items-start p-4">
+              <div className="flex items-center p-4">
                 <div className="bg-pink-100 text-black px-3 py-2 rounded-lg shadow-sm text-center mr-4">
                   <p className="text-xs font-semibold text-gray-600">{today}</p>
                   <p className="text-xl font-bold">12:00</p>
