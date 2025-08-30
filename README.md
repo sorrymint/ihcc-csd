@@ -63,6 +63,21 @@ Version 1 is complete, but we plan to continue adding new features to grow our o
 
 ---
 
+<br>
+
+## Hard Resetting Browser
+
+**Windows/Linux:** `Press Ctrl + F5 or Ctrl + Shift + R`
+
+**Mac:** `Press Cmd + Shift + R or Option + Cmd + E (Safari)`
+
+**Alternatively:** Open Developer Tools (F12), right-click the reload button, and select "Empty Cache and Hard Reload".
+
+<br>
+<br>
+
+---
+
 **Thank you,**  
 *Computer Software Development Club*
 
