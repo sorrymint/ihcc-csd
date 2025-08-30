@@ -40,7 +40,7 @@ export default function Header() {
     { href: "/Events", label: "Events" },
     { href: "/Contact", label: "Contact" },
     { href: "/Alumni", label: "Alumni" },
-    { href: "/Podcast", label: "Podcast"}
+    { href: "/Podcast", label: "Podcast" },
   ];
 
   return (
@@ -58,6 +58,7 @@ export default function Header() {
               <button
                 onClick={() => setMenuOpen(!menuOpen)}
                 className=" md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hovergray-900 hover:bg-gray-100 focus:outline-none "
+                title="Menu"
               >
                 {!menuOpen ? (
                   <Menu
@@ -77,6 +78,7 @@ export default function Header() {
                     alt="Computer Software Development Club Logo"
                     width={40}
                     height={40}
+                    title="Home Button"
                   />
                 </Link>
               </div>
@@ -90,18 +92,19 @@ export default function Header() {
                   className={`text-(--text-dark) hover:text-neutral-800 px-2 py-2 text-md font-semibold transition-colors ${
                     pathname === link.href ? ` border-b-2 text-(--yellow)` : ""
                   }`}
+                  title={`${link.label}`}
                 >
                   {link.label}
                 </Link>
               ))}
             </div>
-            <div
-            className=" w-24">
-            <button
-              className={` rounded-3xl h-fit  px-[20px] py-[4px]  bg-(--yellow) text-sm text-(--text-base)  font-semibold shadow-lg cursor-pointer tracking-[1px] uppercase transition-all duration-150 ease-linear hover:tracking-[2px] hover:bg-(--yellow2) hover:shadow-[0_5px_16px_0px_var(--yellow2)] active:tracking-[3px] active:bg-(--yellow2) active:shadow-[0_0px_0px_0px_var(--yellow2)] active:translate-y-[5px] active:duration-100 `}
-            >
-              <Link href="/Login"> Login </Link>
-            </button>
+            <div className=" w-24">
+              <button
+                className={` rounded-3xl h-fit  px-[20px] py-[4px]  bg-(--yellow) text-sm text-(--text-base)  font-semibold shadow-lg cursor-pointer tracking-[1px] uppercase transition-all duration-150 ease-linear hover:tracking-[2px] hover:bg-(--yellow2) hover:shadow-[0_5px_16px_0px_var(--yellow2)] active:tracking-[3px] active:bg-(--yellow2) active:shadow-[0_0px_0px_0px_var(--yellow2)] active:translate-y-[5px] active:duration-100 `}
+                title="Login"
+              >
+                <Link href="/Login"> Login </Link>
+              </button>
             </div>
           </div>
         </div>
@@ -126,6 +129,7 @@ export default function Header() {
                   ? `text-(--yellow) bg-(--bg-base) rounded-xl`
                   : ` text-(--text-base) hover:text-gray-900 hover:bg-gray-100`
               }`}
+              title={`${h.label}`}
             >
               {" "}
               {h.label}
