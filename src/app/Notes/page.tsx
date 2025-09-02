@@ -17,7 +17,7 @@ export default function NotesIndexPage() {
   return (
     <main>
       <div className="mx-auto p-6 flex justify-center items-center flex-col h-screen">
-        <h1 className="text-nowrap !mt-[15%]  md:!mt-[10%] !text-5xl">
+        <h1 className="text-nowrap !mt-[15%]  md:!mt-[10%] md:!text-5xl !text-4xl">
           Notes by Year
         </h1>
         <ul className=" mt-[5%] mb-[5%] w-full ">
@@ -26,12 +26,14 @@ export default function NotesIndexPage() {
               className="!text-(--text-base) text-4xl m-4 text-center bg-var(--gray-750) flex justify-center"
               key={year}
             >
-              <div className="bg-(--bg-base) w-[90%] flex items-center justify-between py-12 px-16 rounded-xl font-extrabold shadow-lg">
-                <Link href={`/Notes/${year}`}>{year}</Link>
+              <div className="bg-(--bg-base) flex items-center justify-between md:py-12 md:px-16 py-8 px-4 rounded-xl font-extrabold shadow-lg space-x-6">
+                <Link href={`/Notes/${year}`}
+                className="!text-wrap md:!text-nowrap h-auto ">
+                  {year}</Link>
 
                 <Link
                   href={`/Notes/${year}`}
-                  className="bg-(--yellow) px-5 py-5 rounded-full shadow-lg cursor-pointer tracking-[1px] uppercase transition-all duration-150 ease-linear hover:tracking-[2px] hover:bg-(--yellow2) hover:shadow-[0_5px_16px_0px_var(--yellow2)] active:tracking-[3px] active:bg-(--yellow2) active:shadow-[0_0px_0px_0px_var(--yellow2)] active:translate-y-[5px] active:duration-100"
+                  className="bg-(--yellow) px-5 py-5 rounded-full shadow-lg cursor-pointer tracking-[1px] uppercase  !text-wrap transition-all duration-150 ease-linear hover:tracking-[2px] hover:bg-(--yellow2) hover:shadow-[0_5px_16px_0px_var(--yellow2)] active:tracking-[3px] active:bg-(--yellow2) active:shadow-[0_0px_0px_0px_var(--yellow2)] active:translate-y-[5px] active:duration-100"
                 >
                   <MoveRight color="white" strokeWidth={3} />
                 </Link>
