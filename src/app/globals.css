@@ -25,7 +25,48 @@
     transform-style: preserve-3d;
 }
 
-@theme{
+:root{
+
+    /* Gray Scale */
+    --gray-50:    #F2F2F2;
+    --gray-base:  #E5E5E5;
+    --gray-200:   #CCCCCC;
+    --gray-black: #000000;
+    --gray-950:   #0D0D0D;
+    --gray-800:   #262626;
+    --gray-750:   #404040;
+
+    /* Accents */
+    --purple:       #701730;
+    --yellow:       #FFA400;
+    --yellow2:      #f77c00;
+    --yellow-light: #f7e700;
+
+    /* Gradients */
+    --gradient-angle: 155deg;
+    --gradient-from: var(--yellow2); /* Tailwind yellow */
+    --gradient-to: var(--yellow);   /* Tailwind purple */
+
+    --YtoP-gradient: linear-gradient(155deg,var(var(--yellow)) 0%, var(var(var(--purple))) 100%);
+
+    --corrent-gradient: linear-gradient(var(--gradient-angle),var(--gradient-from),var(--gradient-to));
+
+    --my-gradient: linear-gradient(to right, #05a8d9, #e62879);
+
+    --text-light: var(--gray-750);
+    --text-base: var(--gray-800);
+    --text-dark: var(--gray-950);
+    --text-accent: var(--purple);
+    --text-invert: var(--gray-base);
+
+    --bg-base:var(--gray-base);
+    --bg-light: var(--gray-50);
+    --bg-dark: var(--gray-200);
+    --bg-accent: var(--yellow);
+    --bg-accentHover: var(--accent);
+
+    --border-primary: var(--gray-750);
+    --color-border-secondary: var(--gray-200);
 
     --font-matrix: Matrix, "sans-serif";
     --font-ff: "Inter", "sans-serif";
@@ -41,16 +82,21 @@
 
 
 h1{
-    font: var(--h2);
+    font: var(--h1);
     margin-top: 0.5rem;
+
 }
 
 h2{
     font: var(--h2);
     margin-top: 0.5rem;
+
 }
 
 h3{
     font: var(--h3);
     margin-top: 0.5rem;
+}
+h4{
+    font: var(--font-ff);
 }
