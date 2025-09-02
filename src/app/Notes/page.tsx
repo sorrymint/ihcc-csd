@@ -17,7 +17,7 @@ export default function NotesIndexPage() {
   return (
     <main>
       <div className="mx-auto p-6 flex justify-center items-center flex-col h-screen">
-        <h1 className="text-nowrap !mt-[15%]  md:!mt-[10%] !text-5xl">
+        <h1 className="text-nowrap !mt-[15%]  md:!mt-[10%] md:!text-5xl !text-4xl">
           Notes by Year
         </h1>
         <ul className=" mt-[5%] mb-[5%] w-full ">
@@ -26,7 +26,7 @@ export default function NotesIndexPage() {
               className="!text-(--text-base) text-4xl m-4 text-center bg-var(--gray-750) flex justify-center"
               key={year}
             >
-              <div className="bg-(--bg-base) w-[90%] flex items-center justify-between py-12 px-16 rounded-xl font-extrabold shadow-lg">
+              <div className="bg-(--bg-base) w-[90%] flex items-center justify-between md:py-12 md:px-16 rounded-xl font-extrabold shadow-lg px-4 py-6 text-wrap md:text-nowrap">
                 <Link href={`/Notes/${year}`}>{year}</Link>
 
                 <Link
