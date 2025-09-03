@@ -11,10 +11,7 @@ export default function Footer() {
 
         <p className="hidden md:block text-sm text-center text-gray-800 mt-5">
           Everyone is welcome to join,{" "}
-          <Link
-            className="underline text-sm text-[#F77C00]/90"
-            href="/Events"
-          >
+          <Link className="underline text-sm text-[#F77C00]/90" href="/Events">
             Click Here
           </Link>{" "}
           to view upcoming events.
@@ -118,8 +115,7 @@ export default function Footer() {
 
           <p className="text-sm text-center text-gray-800 px-5 pb-5 md:hidden">
             Everyone is welcome to join,{" "}
-            <span
-            title="View Events">
+            <span title="View Events">
               <Link
                 className="underline text-sm text-[#F77C00]/90"
                 href="/Events"
