@@ -82,7 +82,7 @@ function UpcomingSection() {
               className="bg-white text-black rounded-2xl shadow-md"
             >
               <Image
-                src="/images/event%20image.png"
+                src="/Images/event%20image.png"
                 alt="Event"
                 className="w-full h-48 object-cover"
                 width={100}
@@ -190,7 +190,7 @@ function HeroSection() {
   return (
     <div
       className={
-        "bg-[url('/images/LaptopBackground1.png')] h-[100vh] bg-no-repeat bg-contain bg-center "
+        "bg-[url('/Images/LaptopBackground1.png')] h-[100vh] bg-no-repeat bg-contain bg-center "
       }
     >
       <div className="pl-[5%]">

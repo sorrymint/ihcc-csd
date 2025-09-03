@@ -74,7 +74,7 @@ export default function Header() {
                 <Link href="/">
                   <Image
                     className=""
-                    src="/images/CSDClubLogo-removebg-preview.svg"
+                    src="/Images/CSDClubLogo-removebg-preview.svg"
                     alt="Computer Software Development Club Logo"
                     width={40}
                     height={40}
@@ -147,7 +147,7 @@ export default function Header() {
   //           <Link href="/">
   //             <img
   //               className="max-w-none"
-  //               src="../images/CSDClubLogo.png"
+  //               src="../Images/CSDClubLogo.png"
   //               alt="somgthing"
   //               width={50}F
   //               height={100}
@@ -195,7 +195,7 @@ export default function Header() {
   //         <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden">
   //           <img
   //             className="w-[50px] max-w-none"
-  //             src="../images/HamburgerMenuIcon.webp"
+  //             src="../Images/HamburgerMenuIcon.webp"
   //             alt="Menu Icon"
   //           />
   //         </button>
