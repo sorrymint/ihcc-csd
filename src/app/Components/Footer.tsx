@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="">
-      <div className=" bg-(--bg-base) py-8  space-y-10">
+      <div className="bg-[#E5E5E5] py-8  space-y-10">
         <h2 className="font-bold flex items-center justify-center text-center text-4xl text-[#701730]">
           Interested In Joining?
         </h2>
@@ -23,7 +23,7 @@ export default function Footer() {
         <div className="flex items-center justify-center mt-5">
           <br></br>
           <button
-            className="rounded-full p-3 pr-6 pl-6 bg-[#FFA400] text-sm text-(--text-base)  font-bold shadow-lg cursor-pointer tracking-[1.5px] uppercase transition-all duration-150 ease-linear hover:tracking-[3px] hover:bg-[#F77C00] hover:shadow-[0_7px_29px_0px_[#F77C00]] active:tracking-[3px] active:bg-[#F77C00] active:shadow-[0_0px_0px_0px_[#F77C00]] active:translate-y-[5px] active:duration-100"
+            className="rounded-full p-3 pr-6 pl-6 bg-[#FFA400] text-sm text-gray-800  font-bold shadow-lg cursor-pointer tracking-[1.5px] uppercase transition-all duration-150 ease-linear hover:tracking-[3px] hover:bg-[#F77C00] hover:shadow-[0_7px_29px_0px_[#F77C00]] active:tracking-[3px] active:bg-[#F77C00] active:shadow-[0_0px_0px_0px_#F77C00] active:translate-y-[5px] active:duration-100"
             title="Join"
           >
             <Link href="/Contact">Join Here</Link>
