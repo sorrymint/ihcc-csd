@@ -4,15 +4,15 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="">
-      <div className=" bg-[#E5E5E5] py-8  space-y-10">
+      <div className=" bg-(--bg-base) py-8  space-y-10">
         <h2 className="font-bold flex items-center justify-center text-center text-4xl text-[#701730]">
           Interested In Joining?
         </h2>
 
-        <p className="hidden md:block text-sm text-center text-gray-800 mt-5">
+        <p className="hidden md:block text-sm text-center text-[--text-base] mt-5">
           Everyone is welcome to join,{" "}
           <Link
-            className="underline text-sm text-[#F77C00]/90"
+            className="underline text-sm text-(--yellow2)/90"
             href="/Events"
           >
             Click Here
@@ -23,7 +23,7 @@ export default function Footer() {
         <div className="flex items-center justify-center mt-5">
           <br></br>
           <button
-            className="rounded-full p-3 pr-6 pl-6 bg-[#FFA400] text-sm text-gray-800 font-bold shadow-lg cursor-pointer tracking-[1.5px] uppercase transition-all duration-150 ease-linear hover:tracking-[3px] hover:bg-[#F77C00] hover:shadow-[0_7px_29px_0px_#F77C00] active:tracking-[3px] active:bg-[#F77C00] active:shadow-[0_0px_0px_0px_#F77C00] active:translate-y-[5px] active:duration-100"
+            className="rounded-full p-3 pr-6 pl-6 bg-(--yellow) text-sm text-(--text-base)  font-bold shadow-lg cursor-pointer tracking-[1.5px] uppercase transition-all duration-150 ease-linear hover:tracking-[3px] hover:bg-(--yellow2) hover:shadow-[0_7px_29px_0px_var(--yellow2)] active:tracking-[3px] active:bg-(--yellow2) active:shadow-[0_0px_0px_0px_var(--yellow2)] active:translate-y-[5px] active:duration-100"
             title="Join"
           >
             <Link href="/Contact">Join Here</Link>
@@ -35,7 +35,7 @@ export default function Footer() {
             <Link href="/">
               <Image
                 className=""
-                src="/images/CSDClubLogo-removebg-preview.svg"
+                src="/Images/CSDClubLogo-removebg-preview.svg"
                 alt="Computer Software Development Club Logo"
                 width={95}
                 height={25}
@@ -67,7 +67,7 @@ export default function Footer() {
             <Link href="https://www.facebook.com/" target="_blank">
               <Image
                 className="h-7 mx-2"
-                src="/images/FaceBookNew.png"
+                src="/Images/FaceBookNew.png"
                 alt="FaceBook"
                 width={28}
                 height={7}
@@ -77,7 +77,7 @@ export default function Footer() {
             <Link href="https://www.instagram.com/" target="_blank">
               <Image
                 className="h-7 mx-2"
-                src="/images/InstagramNew.png"
+                src="/Images/InstagramNew.png"
                 alt="Instagram"
                 width={28}
                 height={7}
@@ -87,7 +87,7 @@ export default function Footer() {
             <Link href="https://x.com/" target="_blank">
               <Image
                 className="h-7 mx-2"
-                src="/images/TwitterNew.png"
+                src="/Images/TwitterNew.png"
                 alt="Twitter"
                 width={28}
                 height={7}
@@ -97,7 +97,7 @@ export default function Footer() {
             <Link href="https://github.com/sorrymint/ihcc-csd" target="_blank">
               <Image
                 className="h-7 mx-2"
-                src="/images/gitHubLogo.png"
+                src="/Images/gitHubLogo.png"
                 alt="GitHub"
                 width={28}
                 height={7}
@@ -107,7 +107,7 @@ export default function Footer() {
             <Link href="https://www.linkedin.com/" target="_blank">
               <Image
                 className="h-7 mx-2"
-                src="/images/LinkedInNew.png"
+                src="/Images/LinkedInNew.png"
                 alt="LinkedIn"
                 width={28}
                 height={7}
@@ -116,12 +116,12 @@ export default function Footer() {
             </Link>
           </div>
 
-          <p className="text-sm text-center text-gray-800 px-5 pb-5 md:hidden">
+          <p className="text-sm text-center text-(--text-base) px-5 pb-5 md:hidden">
             Everyone is welcome to join,{" "}
             <span
             title="View Events">
               <Link
-                className="underline text-sm text-[#F77C00]/90"
+                className="underline text-sm text-(--yellow2)/90"
                 href="/Events"
                 title="View Events"
               >
