@@ -76,7 +76,7 @@ export default async function NotePage({
 
   return (
     <article className="flex flex-col items-center mx-auto">
-        <p className="text-lg font-medium mt-24 !text-(--text-base)/75">
+        <p className="text-lg font-medium mt-24 !text-gray-800/75">
           {addSpacesToCamelCase(data.title ?? slug)} — Club Leaders, Instructors
         </p>
         <div
@@ -84,13 +84,13 @@ export default async function NotePage({
     max-w-screen mb-20
     [&_h1]:!mb-8 [&_h1]:text-center  [&_h1]:!text-5xl
 
-    [&_h2]:!font-(family-name:--font-ff) !text-(--text-base)/95 [&_h2]:!text-4xl  [&_h2]:!my-5 [&_h2]:!mt-20
+    [&_h2]:!font-(family-name:--font-ff) !text-gray-800/95 [&_h2]:!text-4xl  [&_h2]:!my-5 [&_h2]:!mt-20
 
-    [&_h3]:text-(--purple) [&_h3]:!mb-2 [&_h3]:!mt-6
+    [&_h3]:text-[#701730] [&_h3]:!mb-2 [&_h3]:!mt-6
 
     [&_h4]:text-xl
 
-    [&_p]:text-xl [&_p]:font-normal [&_p]:!font-(family-name:--font-ff) [&_p]:text-(--text-base)/85 [&_p]:text-wrap [&_p]:overflow-clip
+    [&_p]:text-xl [&_p]:font-normal [&_p]:!font-(family-name:--font-ff) [&_p]:text-gray-800/85 [&_p]:text-wrap [&_p]:overflow-clip
 
     [&_ul]:mt-2 [&_ul]:mb-4
 

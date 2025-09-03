@@ -39,7 +39,7 @@
     /* Accents */
     --purple:       #701730;
     --yellow:       #FFA400;
-    --yellow2:      #f77c00;
+    --yellow2:      #F77C00;
     --yellow-light: #f7e700;
 
     /* Gradients */
@@ -59,7 +59,7 @@
     --text-accent: var(--purple);
     --text-invert: var(--gray-base);
 
-    --bg-base:var(--gray-base);
+    --bg-base: var(--gray-base);
     --bg-light: var(--gray-50);
     --bg-dark: var(--gray-200);
     --bg-accent: var(--yellow);
@@ -97,6 +97,7 @@ h3{
     font: var(--h3);
     margin-top: 0.5rem;
 }
+
 h4{
     font: var(--font-ff);
 }

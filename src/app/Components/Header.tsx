@@ -45,24 +45,24 @@ export default function Header() {
 
   return (
     <nav
-      className={`fixed w-full  transition-transform duration-300 z-50 ${
+      className={`fixed w-full transition-transform duration-300 z-50 ${
         isVisible ? "transition-y-0" : "-translate-y-full"
       }  `}
     >
       <div
-        className={`px-4 sm:px-6 md:px-14 lg:px-18 bg-(--bg-light) rounded-2xl mx-3 mt-3 h-18 shadow-md`}
+        className={`px-4 sm:px-6 md:px-14 lg:px-18 bg-[#E5E5E5] rounded-2xl mx-3 mt-3 h-18 shadow-md`}
       >
         <div className="flex h-full w-full items-center">
           <div className="flex gap-2 items-center w-full justify-between ">
             <div className="flex items-center gap-4">
               <button
                 onClick={() => setMenuOpen(!menuOpen)}
-                className=" md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hovergray-900 hover:bg-gray-100 focus:outline-none "
+                className=" md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none "
                 title="Menu"
               >
                 {!menuOpen ? (
                   <Menu
-                    className="text-3xl "
+                    className="text-3xl"
                     strokeWidth={3}
                     color={"#0D0D0D"}
                   />
@@ -89,8 +89,8 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`text-(--text-dark) hover:text-neutral-800 px-2 py-2 text-md font-semibold transition-colors ${
-                    pathname === link.href ? ` border-b-2 text-(--yellow)` : ""
+                  className={`text-gray-800 hover:text-neutral-800 px-2 py-2 text-md font-semibold transition-colors ${
+                    pathname === link.href ? "border-b-2 text-[#FFA400]!" : ""
                   }`}
                   title={`${link.label}`}
                 >
@@ -100,7 +100,7 @@ export default function Header() {
             </div>
             <div className=" w-24">
               <button
-                className={` rounded-3xl h-fit  px-[20px] py-[4px]  bg-(--yellow) text-sm text-(--text-base)  font-semibold shadow-lg cursor-pointer tracking-[1px] uppercase transition-all duration-150 ease-linear hover:tracking-[2px] hover:bg-(--yellow2) hover:shadow-[0_5px_16px_0px_var(--yellow2)] active:tracking-[3px] active:bg-(--yellow2) active:shadow-[0_0px_0px_0px_var(--yellow2)] active:translate-y-[5px] active:duration-100 `}
+                className={`rounded-3xl h-fit px-[20px] py-[4px] bg-[#FFA400] text-sm text-gray-800 font-semibold shadow-lg cursor-pointer tracking-[1px] uppercase transition-all duration-150 ease-linear hover:tracking-[2px] hover:bg-[#F77C00] hover:shadow-[0_5px_16px_0px_#F77C00] active:tracking-[3px] active:bg-[#F77C00] active:shadow-[0_0px_0px_0px_#F77C00] active:translate-y-[5px] active:duration-100 `}
                 title="Login"
               >
                 <Link href="/Login"> Login </Link>
@@ -117,7 +117,7 @@ export default function Header() {
         } `}
       >
         <div
-          className={`px-2 pt-8 pb-3 space-y-1 sm:px-3 bg-(--bg-light) mx-3 -mt-4 rounded-b-2xl`}
+          className={`px-2 pt-8 pb-3 space-y-1 sm:px-3 bg-[#E5E5E5] mx-3 -mt-4 rounded-b-2xl`}
         >
           {headerLinks.map((h) => (
             <Link
@@ -126,8 +126,8 @@ export default function Header() {
               onClick={() => setMenuOpen(false)}
               className={` block px-3 py-3 text-base font-medium ${
                 pathname === h.href
-                  ? `text-(--yellow) bg-(--bg-base) rounded-xl`
-                  : ` text-(--text-base) hover:text-gray-900 hover:bg-gray-100`
+                  ? `text-[#FFA400] bg-[#dfdcdc] rounded-xl`
+                  : ` text-gray-800 hover:text-gray-900 hover:bg-gray-100`
               }`}
               title={`${h.label}`}
             >

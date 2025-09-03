@@ -64,6 +64,34 @@ Version 1 is complete, but we plan to continue adding new features to grow our o
 ---
 
 <br>
+<br>
+
+# Versions
+
+## Version 1.1
+
+### Updates
+- Revamped Header  
+- Revamped Footer  
+- Updated Notes Page Styles  
+- Redesigned Hero Section  
+- Added Dynamic Buttons  
+- Added Podcast Page  
+
+### Contributions
+- **Hero Section** — Ashley Abongwa  
+- **Header** — Ashley Abongwa  
+- **Footer** — Caden Epp  
+- **Dynamic Buttons** — Ashley Abongwa  
+- **Notes Page Styles** — Ashley Abongwa  
+- **Podcast Page** — Caden Epp  
+
+---
+<br>
+<br>
+
+# Documentation
+Below is documentation for the CSD Club Website
 
 ## Hard Resetting Browser
 
