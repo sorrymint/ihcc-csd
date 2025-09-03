@@ -75,14 +75,14 @@ function UpcomingSection() {
         Upcoming Events
       </h3>
       <div className=" overflow-scroll px-5 py-5">
-        <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {[1, 2, 3].map((_, index) => (
             <div
               key={index}
               className="bg-white text-black rounded-2xl shadow-md"
             >
               <Image
-                src="/Images/event%20image.png"
+                src="/images/event%20image.png"
                 alt="Event"
                 className="w-full h-48 object-cover"
                 width={100}
@@ -112,7 +112,7 @@ function UpcomingSection() {
       <div className="text-center mt-8">
         <Link
           href="/Events"
-          className="px-24 py-3 rounded-full bg-(--yellow) text-sm text-(--text-base)  font-bold shadow-lg cursor-pointer tracking-[1.5px] uppercase transition-all duration-150 ease-linear hover:tracking-[2px] hover:bg-(--yellow2) hover:shadow-[0_7px_29px_0px_var(--yellow2)] active:tracking-[2px] active:bg-(--yellow2) active:shadow-[0_0px_0px_0px_var(--yellow2)] active:translate-y-[5px] active:duration-100"
+          className="px-24 py-3 rounded-full bg-[#FFA400] text-sm text-gray-800 font-bold shadow-lg cursor-pointer tracking-[1.5px] uppercase transition-all duration-150 ease-linear hover:tracking-[2px] hover:bg-[#F77C00] hover:shadow-[0_7px_29px_0px_#F77C00] active:tracking-[2px] active:bg-[#F77C00] active:shadow-[0_0px_0px_0px_#F77C00] active:translate-y-[5px] active:duration-100"
         >
           View Events
         </Link>
@@ -186,16 +186,16 @@ function FAQSection() {
 }
 
 function HeroSection() {
-  const countdownDate = new Date("2025-08-30T23:18:07");
+  const countdownDate = new Date("2025-09-18T23:18:07");
   return (
     <div
       className={
-        "bg-[url('/Images/LaptopBackground1.png')] h-[100vh] bg-no-repeat bg-contain bg-center "
+        "bg-[url('/images/LaptopBackground1.png')] h-[100vh] bg-no-repeat bg-contain bg-center "
       }
     >
       <div className="pl-[5%]">
-        <h1 className="!m-0 !text-4xl text-(--text-invert) pt-[16vh] md:pt-[20vh] md:!text-5xl lg:pt-[24vh]">
-          COMPUPTER <span className="block text-(--purple)">SOFTWARE</span>{" "}
+        <h1 className="!m-0 !text-4xl text-[#E5E5E5] pt-[16vh] md:pt-[20vh] md:!text-5xl lg:pt-[24vh]">
+          COMPUPTER <span className="block text-[#701730]">SOFTWARE</span>{" "}
           DEVELOPMENT
         </h1>
 

@@ -23,17 +23,17 @@ export default function NotesIndexPage() {
         <ul className=" mt-[5%] mb-[5%] w-full ">
           {years.map((year) => (
             <li
-              className="!text-(--text-base) text-4xl m-4 text-center bg-var(--gray-750) flex justify-center"
+              className="!text-gray-800 text-4xl m-4 text-center flex justify-center"
               key={year}
             >
-              <div className="bg-(--bg-base) flex items-center justify-between md:py-12 md:px-16 py-8 px-4 rounded-xl font-extrabold shadow-lg space-x-6">
+              <div className="bg-[#E5E5E5] flex items-center justify-between md:py-12 md:px-16 py-8 px-4 rounded-xl font-extrabold shadow-lg space-x-6">
                 <Link href={`/Notes/${year}`}
                 className="!text-wrap md:!text-nowrap h-auto ">
                   {year}</Link>
 
                 <Link
                   href={`/Notes/${year}`}
-                  className="bg-(--yellow) px-5 py-5 rounded-full shadow-lg cursor-pointer tracking-[1px] uppercase  !text-wrap transition-all duration-150 ease-linear hover:tracking-[2px] hover:bg-(--yellow2) hover:shadow-[0_5px_16px_0px_var(--yellow2)] active:tracking-[3px] active:bg-(--yellow2) active:shadow-[0_0px_0px_0px_var(--yellow2)] active:translate-y-[5px] active:duration-100"
+                  className="bg-[#FFA400] px-5 py-5 rounded-full shadow-lg cursor-pointer tracking-[1px] uppercase !text-wrap transition-all duration-150 ease-linear hover:tracking-[2px] hover:bg-[#F77C00] hover:shadow-[0_5px_16px_0px_#F77C00] active:tracking-[3px] active:bg-[#F77C00] active:shadow-[0_0px_0px_0px_#F77C00] active:translate-y-[5px] active:duration-100"
                 >
                   <MoveRight color="white" strokeWidth={3} />
                 </Link>

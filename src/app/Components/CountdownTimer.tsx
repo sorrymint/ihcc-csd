@@ -62,8 +62,8 @@ export default function CountdownTimer({
   return (
     <section>
       <div className=" text-xl flex flex-col gap-4 w-fit px-2 py-2">
-        <h3 className="!text-xl text-(--text-invert)/90 ">
-          <span className="text-(--yellow) text-xs block">{category}</span>
+        <h3 className="!text-xl text-[#E5E5E5]/90 ">
+          <span className="text-[#FFA400] text-xs block">{category}</span>
           {title}
         </h3>
 
@@ -71,10 +71,10 @@ export default function CountdownTimer({
           {Object.entries(timeLeft).map(([unit, value]) => (
             <div
               key={unit}
-              className=" border-1 border-(--yellow)/20 rounded-md text-center max-w-[52px] py-1 w-[46px] px-2"
+              className=" border-1 border-[#FFA400]/20 rounded-md text-center max-w-[52px] py-1 w-[46px] px-2"
             >
-              <p className="font-bold text-(--yellow)">{value}</p>
-              <p className="text-sm text-(--text-invert)/80 font-semibold">
+              <p className="font-bold text-[#FFA400]">{value}</p>
+              <p className="text-sm text-[#E5E5E5]/80 font-semibold">
                 {unit}
               </p>
             </div>

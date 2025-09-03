@@ -59,23 +59,23 @@ export default async function YearPage({
       <ul className="mt-[3%] mb-[5%] w-full flex md:flex-wrap gap-4 justify-center flex-col md:flex-row items-center py-2">
         {slugs.map((slug, index) => (
           <li
-            className=" bg-var(--gray-750) flex justify-center md:90  w-fit "
+            className="flex justify-center md:90  w-fit "
             key={index}
           >
             <div
-              className="bg-(--bg-base) max-w-96 w-80 lg:w-92 flex items-center justify-between px-8 py-12 md:px-12 lg:px-16 rounded-xl shadow-lg overflow-hidden text-ellipsis"
+              className="bg-[#E5E5E5] max-w-96 w-80 lg:w-92 flex items-center justify-between px-8 py-12 md:px-12 lg:px-16 rounded-xl shadow-lg overflow-hidden text-ellipsis"
               key={slug}
             >
               <Link
                 href={`/Notes/${year}/${slug}`}
-                className="!text-(--text-base) text-4xl font-bold line-clamp-1 text-center py-1 px-1"
+                className="!text-gray-800 text-4xl font-bold line-clamp-1 text-center py-1 px-1"
               >
                 {addSpacesToCamelCase(slug)}
               </Link>
 
               <Link
                 href={`/Notes/${year}/${slug}`}
-                className="bg-(--yellow) px-5 py-5 rounded-full shadow-lg cursor-pointer tracking-[1px] uppercase transition-all duration-150 ease-linear hover:tracking-[2px] hover:bg-(--yellow2) hover:shadow-[0_5px_16px_0px_var(--yellow2)] active:tracking-[3px] active:bg-(--yellow2) active:shadow-[0_0px_0px_0px_var(--yellow2)] active:translate-y-[5px] active:duration-100"
+                className="bg-[#FFA400] px-5 py-5 rounded-full shadow-lg cursor-pointer tracking-[1px] uppercase transition-all duration-150 ease-linear hover:tracking-[2px] hover:bg-[#F77C00] hover:shadow-[0_5px_16px_0px_#F77C00] active:tracking-[3px] active:bg-[#F77C00] active:shadow-[0_0px_0px_0px_#F77C00] active:translate-y-[5px] active:duration-100"
               >
                 <MoveRight color="white" strokeWidth={3} />
               </Link>
