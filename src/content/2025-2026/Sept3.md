@@ -67,6 +67,47 @@ Let's make this year a success.
 
 ## Minutes
 
-## Attendance
+### Lucas Introduces leadership to everyone new
 
+### Game Night - October 29th 2025 3:00PM - 4:00PM
+
+### Caden Talks About Club Website and Podcast and activities students can participate in
+
+### Caden Talks about Byte Jam, Pizza Ranch Tip Night 10/02 5-8PM, and tshirt contest
+
+### Lucas Talks about IHCC Club Meeting (IHCC Warrior Involvement Fair)
+
+### Luke Talks about Ideas for future club events?
+
+### Luke Talks about importance of attending club meetings
+
+### Caden Thanks everyone for coming
+
+
+
+
+## Attendance
+Lincoln	Gilbert ,
+Arun	Graeff,
+Clayton	Ferguson,
+Mike	OCarroll,
+Stephen	Repp,
+Jose	Camacho,
+Lucas	Borton,
+Lucas	Borton,
+Clay	Gleason,
+Will	Collins,
+Caden	Epp,
+Bryan-Krueger	Starr,
+Katra	Sterner,
+Ashley	A,
+Conrad	Parker,
+Ethan	Umphress,
+Laillah	Zainath,
+Dominike	Deevers,
+Eliya	Blidchenko,
+Elaina	Sallee,
+Trent	Grooms,
+Ethan	Durflinger,
+Draven	Livingston
 
