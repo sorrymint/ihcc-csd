@@ -41,6 +41,7 @@ export default function Header() {
     { href: "/Contact", label: "Contact" },
     { href: "/Alumni", label: "Alumni" },
     { href: "/Podcast", label: "Podcast" },
+    { href: "/AWS", label: "AWS"},
   ];
 
   return (
