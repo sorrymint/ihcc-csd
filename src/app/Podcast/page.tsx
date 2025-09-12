@@ -83,7 +83,7 @@ export default function Podcast() {
           >
             <div className="relative w-full h-12 sm:h-16">
               <Image
-                src="data:image/jpeg;base64,..."
+                src={"/Images/amazonMusicLogo.png"}
                 alt="Amazon Music Logo"
                 layout="fill"
                 objectFit="contain"

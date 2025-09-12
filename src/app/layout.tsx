@@ -35,7 +35,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body className="antialiased bg-white text-black min-h-screen ">
+      <body className="antialiased bg-white text-black min-h-screen flex flex-col">
         <Header />
 
         <main className="flex-grow">{children}</main>

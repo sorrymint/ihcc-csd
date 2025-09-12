@@ -1,0 +1,6 @@
+/* use .aws-content or .aws-page css class before selecting a html element specifically, otherwise it will affect the whole page (header and footer) */
+
+.aws-content a {
+    color: yellow;
+}
+
