@@ -31,7 +31,43 @@ Introduce the student to the group and have them start.
 
 ## Minutes
 
+### Lucas Starts Meetings
+
+### Luke Talks about applying for internships
+
+### Caden goes over pizza ranch tip night
+
+### Caden goes over T-shirt desing contest, designs in by (22nd)
+
+### Caden goes over podcast and new episodes and new 3rd - co host and possible successor and what are the expectations of doing it
+
+### Katra does her internhip presentation
+
+### Lucas talks about next game night
 
 ## Attendance
 
+Caden	Epp,
+Mike	OCarroll,
+Stephen	Repp,
+Lincoln	Gilbert,
+Jenna 	Mickey,
+Draven	Livingston,
+Susan	Wilson,
+Arun	Graeff,
+Clayton	Ferguson,
+Conrad 	Parker ,
+Elaina	Sallee,
+Katra	Sterner,
+Chabeli 	Rivera Torres,
+Ashley	A,
+Trent	Grooms,
+Ethan	Durflinger,
+Dominike	Deevers,
+Fiori	Weldemichael,
+Mason	Schmidtke,
+Clay	Gleason,
+Will	Collins,
+Graciela	Mendoza-Vazquez,
+cody	carroll,
 
