@@ -37,10 +37,10 @@ You need to meet with your mentor before April 22nd.
 
 ### Vermeer
 - Amy talks about Vermeer and what they do.
-- Amy talk on possible careers and oppurunities at Vermeer.
+- Amy talk on possible careers and opportunities at Vermeer.
 - possible internships are listed in the fall (get applications in by end of the callender year).
 - talks about different locations for Vermeer.
-- Vermeer is a global company so many possibilites around the world
+- Vermeer is a global company so many possibilities around the world
 
 ### TAI
 - Caden talks about the experience at the event
