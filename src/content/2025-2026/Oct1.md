@@ -43,22 +43,14 @@ Feel free to dress up in Halloween outfits.
 
 Game: 
 
-### ByteJam Overview
+### Internship Presentations
 
-[Indian Hills Annual Byte Jam Website](https://www.indianhills.edu/news/events/byte_jam.php)
-
-Work days: Nov 5,6,10
-
-Presentation: Nov 11th
-
-- Go over how ByteJam works
-- Read over ByteJam Guidelines
-- Ask second year students for advice for first years.
-- Yes everyone must attend. It is for a grade.
+Caden will present what he did during his internship. 
 
 ### Next Meeting Oct 15
 
-SSS is coming to present what SSS can do for you.
+- SSS is coming to present what SSS can do for you.
+- ByteJam Overview
 
 ## Minutes
 
