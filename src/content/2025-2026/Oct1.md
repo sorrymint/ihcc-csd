@@ -54,6 +54,38 @@ Caden will present what he did during his internship.
 
 ## Minutes
 
+### Lucas Talks About Tip Night Tommorow Be There
+
+### Lucas Talks About Club Picnic
+
+### Luke Talks About vote for spending money on food - everyone hands up for yes we spend money on food
+
+### Lucas Talks about We Write Code Event
+
+### Caden Talks about game night fundraiser
+
+### Caden gives internship presentation
+
 ## Attendance
+
+Lincoln	Gilbert,
+Clayton	Ferguson,
+Caden	Epp,
+Will	Collins,
+Clay	Gleason,
+Arun	Graeff,
+Dominike	Deevers,
+Conrad	Parker ,
+Ashley	Abongwa,
+Mason	Schmidtke,
+Draven	Livingston,
+Laillah	Zainath ,
+Katra	Sterner,
+Lucas	Borton,
+Trent	Grooms,
+Mike	OCarroll,
+Ethan	Durflinger,
+Elaina	Sallee,
+Stephen	Repp
 
 
