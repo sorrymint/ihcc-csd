@@ -35,5 +35,29 @@ Student Support Systems is going to come and talk to us about their program.
 
 ## Minutes
 
+### Lucas talks about 8th Grader Day
+
+### Lucas talks about Gaming Tournament
+
+### Speaker talks about SSS
+
 ## Attendance
+
+Michael	OCarroll,
+Lucas	Borton,
+Ethan	Umphress,
+Clay	Gleason,
+Jose 	Camacho,
+Dominike	Deevers,
+Ana 	Baltazar,
+Clayton 	Williams,
+Katra	Sterner,
+Lincoln	Gilbert,
+fiori	weldemichael,
+Laillah	Zainath,
+Clayton	Ferguson,
+Stephen	Repp,
+Mason	Schmidtke,
+Elaina	Sallee,
+Conrad 	Parker 
 
