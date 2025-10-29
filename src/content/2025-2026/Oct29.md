@@ -38,4 +38,11 @@ The Project Management team will be hosting this activity.
 
 ## Minutes
 
+### Lucas Talks About Game Night
+
+### Lucas Talks About 8th Grader Day
+
+### Caden Talks About ByteJam
+
+
 ## Attendance
