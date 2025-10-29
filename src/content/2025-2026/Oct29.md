@@ -46,3 +46,24 @@ The Project Management team will be hosting this activity.
 
 
 ## Attendance
+Clayton	Williams,
+Marcie (Kyle)	Benacka,
+Arun	Graeff,
+Draven	Livingston,
+Stephen	Repp,
+Conrad	Parker,
+Jose	Camacho,
+Lincoln	Gilbert,
+Trent	Grooms,
+Laillah 	Zainath,
+Ethan	Durflinger,
+Dominike	Deevers,
+Elaina	Sallee,
+Ashley	Abongwa,
+Lucas	Borton,
+Soliver 	Pierre ,
+Clay	Gleason,
+fiori	weldemichael,
+Clayton	Ferguson,
+Ethan	Umphress,
+Caden Epp
