@@ -25,10 +25,6 @@ We will be going over a little app to show the students what software developmen
 We will also want students to talk about living at Hills.
 
 
-
-
-
-
 ### Byte Jam
 
 The Project management team might want to share something about Byte Jam.
@@ -36,11 +32,7 @@ The Project management team might want to share something about Byte Jam.
 ### Byte Jam Voting App Stress Test
 
 We are going to have a little activity where we stress test the Byte Jam voting app.
-
-
-### SSS
-
-Student Support Systems is going to come and talk to us about their program.
+The Project Management team will be hosting this activity.
 
 ### Next Meeting November 19th
 
