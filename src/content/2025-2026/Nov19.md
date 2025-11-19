@@ -58,5 +58,30 @@ Who: Ashley Abongwa (ashley_abongwa@stu.indianhills.edu) and Caden Epp (caden_ep
 
 ## Minutes
 
+### Lucas starts meeting
+
+### Lucas talks about game night
+
+### Lucas talks about 8th grader day
+
+### Luke talks about freelancing web development
+
+### Luke talks about student tutors
+
+### Caden talks about Podcast
+
+### Lucas ends meeting
+
 ## Attendance
+
+Clay	Gleason,
+Will	Collins,
+Ashley	Abongea,
+Katra	Sterner,
+Arun	Graeff,
+Stephen	Repp,
+Ylyas	Movlyamov,
+Laïllah	Zainath,
+Elaina	Sallee,
+Caden	Epp
 
