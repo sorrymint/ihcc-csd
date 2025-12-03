@@ -49,7 +49,39 @@ We will be holding elections in our next meeting.
 
 ### Next Meeting January 7th
 
+## Minutes
+
+### Lucas Starts Meeting
+
+### Lucas Talks about Spring Events
+
+### Lucas Talks about Gaming Tournament
+
+### Lucas Talks about Tutors
+
+### Lucas Talks about Ellection for Club
+
+### Lucas Ends Meetings
+
 ## Attendance
+
+Clayton	Ferguson,
+Will	Collins,
+Draven	Livingston,
+Dominike	Deevers,
+Conrad 	Parker,
+Ethan	Umphress,
+Arun 	Graeff,
+Elaina	Sallee,
+Stephen	Repp,
+Kyle 	Benacka,
+Laillah	Zainath,
+Lincoln	Gilbert,
+Ana 	Baltazar,
+Seth	Staydohar,
+Katra	Sterner,
+Caden	Epp,
+YLYAS	MOVLYAMOV
 
 
 
