@@ -22,7 +22,29 @@ Then old the vote by hand.
 
 ## Minutes
 
+### Luke goes over hazing training for new Iowa Law
+
+### Lucas starts ellection
+- President: Luis
+- VP: Dominike
+- Secretary: Steven
+
 ## Attendance
+Caden	Epp,
+Elaina	Sallee,
+Arun	Graeff,
+Draven	Livingston,
+Clayton	Ferguson,
+Lucas	Borton,
+Laïllah 	Zainath,
+Will	Collins,
+Dominike	Deevers,
+Lincoln	Gilbert,
+Stephen	Repp,
+Conrad 	Parker ,
+Katra	Sterner,
+Jaxon	Ford,
+Ashley	A
 
 
 
