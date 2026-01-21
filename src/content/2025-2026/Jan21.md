@@ -50,9 +50,30 @@ The following meeting will be Spring Term.
 
 ## Minutes
 
+### Hazing Training Immediately
+
+### Carreer Fair
+
+### Pick Attraction for Event
+
+### Lucas Ends off Club Meetings
+
 ## Attendance
 
-
+Laillah	Zainath,
+Conrad	Parker ,
+Isaiah	Kinney,
+Elaina 	Sallee,
+Lincoln	Gilbert,
+Caden	Epp,
+Kyle	Benacka,
+Ashley	A,
+Will	Collins,
+Stephen	Repp,
+Draven	Livingston,
+Dominike	Deevers,
+Ethan	Umphress,
+Katra	Sterner
 
 
 
