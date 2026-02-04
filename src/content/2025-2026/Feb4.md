@@ -73,5 +73,38 @@ First meeting with new club leadership.
 
 ## Minutes
 
+### Lucas start meeting
+
+### Lucas introduces gues for marketing for more students
+
+### Guest talks about marketing information
+
+### Lucas talks about TAI
+
+### Luke talks about Job Coprps
+
+### Caden Talks about Podcast
+
+### Lucas end the meeting
+
+### - last meeting with current leadership #rip
+
 
 ## Attendance
+
+Conrad 	Parker ,
+Arun	Graeff,
+Lucas	Borton,
+Ethan	Umphress,
+Will	Collins,
+Ashley 	A,
+Draven	Livingston,
+Dominike	Deevers,
+Elaina 	Sallee,
+Laillah	Zainath,
+Luis	Acuna,
+Lincoln	Gilbert,
+Katra	Sterner,
+Caden	Epp,
+Clayton	Ferguson,
+Stephen	Repp,
