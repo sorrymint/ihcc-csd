@@ -59,6 +59,12 @@ Still have some people that have not completed the training.
 
 - Give a hand to the old leadership.
 - This club can become whatever the new club leadership wants.
+- I want to see:
+  - Club website expanded/improved.
+  - More club events.
+    - Fun (game night) and more technical events.
+  - The social media accounts to grow.
+  - The podcast to live on past Caden graduating. 
 
 ### Next Meeting March 4th
 
