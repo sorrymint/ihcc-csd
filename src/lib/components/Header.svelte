@@ -1,215 +1,59 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import { page } from '$app/state';
-	import { primaryPages } from '$lib/site-navigation';
 
-	let menuOpen = $state(false);
-	let isVisible = $state(true);
+	const links = [
+		{ href: '/', label: 'Home' },
+		{ href: '/blog', label: 'Blog' },
+		{ href: '/notes', label: 'Notes' },
+		{ href: '/events', label: 'Events' },
+		{ href: '/contact', label: 'Contact' },
+		{ href: '/alumni', label: 'Alumni' },
+		{ href: '/podcast', label: 'Podcast'},
+		{ href: '/aws', label: 'AWS' },
+	] as const;
 
 	const isActive = (href: string) =>
 		href === '/'
 			? page.url.pathname === '/'
 			: page.url.pathname === href || page.url.pathname.startsWith(`${href}/`);
-
-	onMount(() => {
-		let lastScrollY = window.scrollY;
-
-		const controlHeader = () => {
-			const currentScrollY = window.scrollY;
-			isVisible = currentScrollY <= lastScrollY || currentScrollY <= 20;
-			lastScrollY = currentScrollY;
-		};
-
-		window.addEventListener('scroll', controlHeader, { passive: true });
-
-		return () => window.removeEventListener('scroll', controlHeader);
-	});
 </script>
 
-<nav class:nav-hidden={!isVisible} class="site-header">
-	<div class="header-shell">
-		<div class="brand-row">
-			<div class="brand-group">
-				<button
-					type="button"
-					class="menu-toggle"
-					onclick={() => (menuOpen = !menuOpen)}
-					aria-expanded={menuOpen}
-					aria-controls="mobile-navigation"
-					aria-label={menuOpen ? 'Close menu' : 'Open menu'}
-				>
-					<span aria-hidden="true">{menuOpen ? '✕' : '☰'}</span>
-				</button>
+<nav class="fixed top-0 left-0 z-50 w-full px-4 pt-4" aria-label="Main navigation">
+	<div class="mx-auto max-w-7xl rounded-2xl bg-neutral-200 px-6 py-4 shadow-lg">
+		<div class="flex items-center justify-between gap-6">
+			<a class="shrink-0" href="/" aria-label="Go to home page">
+				<img
+					src="/Images/Code.svg"
+					alt="Computer Software Development Club Logo"
+					class="h-20 w-auto md:h-12"
+				/>
+			</a>
 
-				<a class="brand-link" href="/" aria-label="Go to home page">
-					<img
-						src="/Images/CSDClubLogo-removebg-preview.svg"
-						alt="Computer Software Development Club Logo"
-						width="40"
-						height="40"
-					/>
-				</a>
-			</div>
-
-			<div class="desktop-links">
-				{#each primaryPages as link (link.href)}
-					<a href={link.href} class:active-link={isActive(link.href)}>{link.label}</a>
+			<!-- TODO work on mobile menu -->
+			<div class="hidden md:flex flex-1 items-center justify-center gap-x-6">
+				{#each links as link}
+					<a
+						href={link.href}
+						class="border-b-2 pb-1 text-base font-semibold transition-colors"
+						class:border-[#f77c00]={isActive(link.href)}
+						class:text-[#f77c00]={isActive(link.href)}
+						class:border-transparent={!isActive(link.href)}
+						class:text-zinc-800={!isActive(link.href)}
+						class:hover:text-zinc-950={!isActive(link.href)}
+					>
+						{link.label}
+					</a>
 				{/each}
 			</div>
-		</div>
-	</div>
 
-	<div id="mobile-navigation" class:mobile-open={menuOpen} class="mobile-panel">
-		<div class="mobile-links">
-			{#each primaryPages as link (link.href)}
+			<div class="shrink-0">
 				<a
-					href={link.href}
-					class:active-mobile-link={isActive(link.href)}
-					onclick={() => (menuOpen = false)}
+					href="/"
+					class="rounded-full bg-[#FFA400] px-5 py-2 text-sm font-bold uppercase tracking-wider text-neutral-900 shadow-md transition-colors hover:bg-[#F77C00]"
 				>
-					{link.label}
+					Login
 				</a>
-			{/each}
+			</div>
 		</div>
 	</div>
 </nav>
-
-<style>
-	.site-header {
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 50;
-		width: 100%;
-		transition: transform 0.3s ease;
-	}
-
-	.nav-hidden {
-		transform: translateY(-100%);
-	}
-
-	.header-shell {
-		margin: 0.75rem;
-		border-radius: 1rem;
-		background: #e5e5e5;
-		box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
-	}
-
-	.brand-row {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		gap: 1rem;
-		min-height: 4.5rem;
-		padding: 0 1rem;
-	}
-
-	.brand-group {
-		display: flex;
-		align-items: center;
-		gap: 0.75rem;
-	}
-
-	.brand-link {
-		display: inline-flex;
-		align-items: center;
-	}
-
-	.brand-link img {
-		display: block;
-	}
-
-	.menu-toggle {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		width: 2.5rem;
-		height: 2.5rem;
-		border: 0;
-		border-radius: 0.75rem;
-		background: transparent;
-		color: #0d0d0d;
-		font-size: 1.5rem;
-		cursor: pointer;
-	}
-
-	.menu-toggle:hover {
-		background: rgba(0, 0, 0, 0.06);
-	}
-
-	.desktop-links {
-		display: none;
-		align-items: center;
-		gap: 1.5rem;
-	}
-
-	.desktop-links a,
-	.mobile-links a {
-		color: #262626;
-		text-decoration: none;
-		font-weight: 600;
-		transition:
-			color 0.2s ease,
-			background-color 0.2s ease;
-	}
-
-	.active-link {
-		color: #f77c00;
-		border-bottom: 2px solid #f77c00;
-		padding-bottom: 0.25rem;
-	}
-
-	.mobile-panel {
-		max-height: 0;
-		overflow: hidden;
-		opacity: 0;
-		transition:
-			max-height 0.3s ease,
-			opacity 0.3s ease;
-	}
-
-	.mobile-open {
-		max-height: 24rem;
-		opacity: 1;
-	}
-
-	.mobile-links {
-		margin: 0 0.75rem;
-		margin-top: -0.25rem;
-		padding: 2rem 0.75rem 0.75rem;
-		border-radius: 0 0 1rem 1rem;
-		background: #e5e5e5;
-		display: flex;
-		flex-direction: column;
-		gap: 0.25rem;
-	}
-
-	.mobile-links a {
-		padding: 0.85rem 0.75rem;
-		border-radius: 0.75rem;
-	}
-
-	.mobile-links a:hover {
-		background: rgba(0, 0, 0, 0.06);
-	}
-
-	.active-mobile-link {
-		background: #dfdcdc;
-		color: #f77c00;
-	}
-
-	@media (min-width: 768px) {
-		.brand-row {
-			padding: 0 1.5rem;
-		}
-
-		.menu-toggle,
-		.mobile-panel {
-			display: none;
-		}
-
-		.desktop-links {
-			display: flex;
-		}
-	}
-</style>

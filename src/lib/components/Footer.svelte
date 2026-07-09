@@ -1,6 +1,5 @@
 <script lang="ts">
-	import { footerPages } from '$lib/site-navigation';
-
+	//TODO update these links, and move them to a icon library
 	const socialLinks = [
 		{ href: 'https://www.facebook.com/', label: 'Facebook', src: '/Images/FaceBookNew.png' },
 		{ href: 'https://www.instagram.com/', label: 'Instagram', src: '/Images/InstagramNew.png' },
@@ -12,43 +11,28 @@
 		},
 		{ href: 'https://www.linkedin.com/', label: 'LinkedIn', src: '/Images/LinkedInNew.png' }
 	];
-
-	const featurePage = footerPages.find((page) => page.href !== '/') ?? footerPages[0];
 </script>
 
 <footer class="site-footer">
 	<div class="footer-shell">
-		<h2>Interested In Joining?</h2>
+		<h2 class="font-matrixtype">Interested In Joining?</h2>
 
 		<p class="footer-copy desktop-copy">
-			Browse the pages currently available on the site.
-			{#if featurePage}
-				<a href={featurePage.href}>{featurePage.label}</a>
-				is the main content section right now.
-			{/if}
+			Everyone is welcome to join, <a href="/events">Click Here</a>to view upcoming events
 		</p>
 
-		{#if featurePage}
-			<div class="cta-row">
-				<a class="cta-link" href={featurePage.href}>Open {featurePage.label}</a>
-			</div>
-		{/if}
+		<div class="cta-row">
+			<a class="cta-link" href="/contact">Join Now</a>
+		</div>
 
 		<div class="footer-grid">
-			<a class="footer-logo" href="/" aria-label="Go to home page">
+			<a class="shrink-0" href="/" aria-label="Go to home page">
 				<img
-					src="/Images/CSDClubLogo-removebg-preview.svg"
+					src="/Images/Code.svg"
 					alt="Computer Software Development Club Logo"
-					width="95"
-					height="25"
+					class="h-20 w-auto md:h-12"
 				/>
 			</a>
-
-			<nav class="quick-links" aria-label="Footer links">
-				{#each footerPages as link (link.href)}
-					<a href={link.href}>{link.label}</a>
-				{/each}
-			</nav>
 
 			<div class="social-links">
 				{#each socialLinks as link (link.href)}
@@ -57,17 +41,11 @@
 					</a>
 				{/each}
 			</div>
-
-			<p class="footer-copy mobile-copy">
-				Browse the pages currently available on the site.
-				{#if featurePage}
-					<a href={featurePage.href}>{featurePage.label}</a>
-				{/if}
-			</p>
 		</div>
 	</div>
 </footer>
 
+<!-- TODO change to tailwind -->
 <style>
 	.site-footer {
 		margin-top: 4rem;
