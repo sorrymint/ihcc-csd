@@ -35,7 +35,7 @@
 <div class="bg-black">
 	<main class="flex-1 pb-8">
 		<div
-			class="bg-[url('/Images/LaptopBackground1.png')] h-[100vh] bg-no-repeat bg-contain bg-center"
+			class="bg-[url('/Images/LaptopBackground1.webp')] h-[100vh] bg-no-repeat bg-contain bg-center"
 		>
 			<div class="pl-[5%]">
 				<h1 class="!m-0 !text-4xl text-[#E5E5E5] pt-[16vh] md:pt-[20vh] md:!text-5xl lg:pt-[24vh]">
@@ -59,7 +59,7 @@
 					{#each [1, 2, 3] as _, index}
 						<div class="rounded-2xl bg-white text-black shadow-md">
 							<img
-								src="/Images/event%20image.png"
+								src="/Images/event%20image.webp"
 								alt="Event"
 								class="h-48 w-full object-cover"
 								width="100"

@@ -20,7 +20,7 @@
 				{leaderShip[index]}
 			</h1>
 			<img
-				src={'/alumni/' + name.replace(/\s+/g, '') + '.png'}
+				src={'/alumni/' + name.replace(/\s+/g, '') + '.webp'}
 				alt="Leadership"
 				class="w-[350px] h-[350px] rounded-full border-4"
 				width={100}
@@ -41,7 +41,7 @@
 				{leaderShip[index]}
 			</h1>
 			<img
-				src={'/alumni/' + name.replace(/\s+/g, '') + '.png'}
+				src={'/alumni/' + name.replace(/\s+/g, '') + '.webp'}
 				alt="Leadership"
 				class="w-[350px] h-[350px] rounded-full border-4"
 				width={100}
