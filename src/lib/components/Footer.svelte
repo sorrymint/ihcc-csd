@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { SvglFacebookLogo, SvglInstagramLogo, SvglGitHubLogo } from '@selemondev/svgl-svelte';
 	//TODO update these links, and move them to a icon library
 	const socialLinks = [
 		{ href: 'https://www.facebook.com/', label: 'Facebook', src: '/Images/FaceBookNew.png' },
@@ -35,11 +36,33 @@
 			</a>
 
 			<div class="social-links">
-				{#each socialLinks as link (link.href)}
-					<a href={link.href} target="_blank" rel="noreferrer" aria-label={link.label}>
-						<img src={link.src} alt={link.label} width="28" height="28" />
+				<!-- Links for Facebook, Instagram, GitHub, and WIN -->
+				<div class="flex gap-4">
+					<a
+						href="https://www.facebook.com/"
+						aria-label="Facebook"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<SvglFacebookLogo class="h-8 w-8" />
 					</a>
-				{/each}
+					<a
+						href="https://www.instagram.com/"
+						aria-label="Instagram"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<SvglInstagramLogo class="h-8 w-8" />
+					</a>
+					<a
+						href="https://www.github.com/"
+						aria-label="GitHub"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<SvglGitHubLogo class="h-8 w-8" />
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
