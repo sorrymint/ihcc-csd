@@ -1,13 +1,15 @@
 import type { Component } from 'svelte';
 
+type NoteDateValue = string | Date;
+
 export type NoteMetadata = {
-	title: string;
 	slug: string;
-	date: string;
+	date: NoteDateValue;
 	summary: string;
 };
 
-export type Note = NoteMetadata & {
+export type Note = Omit<NoteMetadata, 'date'> & {
+	date: string;
 	year: string;
 	component: Component;
 };
@@ -22,13 +24,28 @@ const markdownModules = import.meta.glob('/content/*/*.md', { eager: true }) as 
 	NoteModule
 >;
 
+function normalizeNoteDate(date: NoteDateValue): string {
+	if (date instanceof Date) {
+		return date.toISOString().slice(0, 10);
+	}
+
+	return date;
+}
+
+function getNoteTimestamp(date: NoteDateValue): number {
+	const normalizedDate = normalizeNoteDate(date);
+	return Date.parse(`${normalizedDate}T00:00:00.000Z`);
+}
+
 export const notes = Object.entries(markdownModules)
 	.map(([filePath, module]) => {
 		const [year] = filePath.replace('/content/', '').split('/');
+		const normalizedDate = normalizeNoteDate(module.metadata.date);
 
 		return {
 			year,
 			...module.metadata,
+			date: normalizedDate,
 			component: module.default
 		};
 	})
@@ -37,7 +54,7 @@ export const notes = Object.entries(markdownModules)
 			return right.year.localeCompare(left.year, undefined, { numeric: true });
 		}
 
-		return left.date.localeCompare(right.date);
+		return getNoteTimestamp(left.date) - getNoteTimestamp(right.date);
 	});
 
 export function getNoteYears() {

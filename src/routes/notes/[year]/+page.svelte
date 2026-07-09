@@ -1,6 +1,16 @@
 <script lang="ts">
 	import type { Note } from '$lib/notes';
 
+	const noteDateFormatter = new Intl.DateTimeFormat('en-US', {
+		month: 'long',
+		day: '2-digit',
+		timeZone: 'UTC'
+	});
+
+	function formatNoteDate(date: string): string {
+		return noteDateFormatter.format(new Date(date));
+	}
+
 	let { data } = $props<{
 		data: {
 			year: string;
@@ -25,7 +35,7 @@
 		{#each data.notes as note (note.slug)}
 			<a class="note-card" href={`/notes/${data.year}/${note.slug}`}>
 				<div>
-					<h2>{note.title}</h2>
+					<h2>{formatNoteDate(note.date)}, Meeting Notes</h2>
 					{#if note.summary}
 						<p>{note.summary}</p>
 					{/if}

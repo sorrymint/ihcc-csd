@@ -1,5 +1,4 @@
 ---
-title: April 30, 2025 Meeting Notes
 slug: April30
 date: 2025-04-30
 summary: Club website updates, game night planning, and field project ideas for the summer term.

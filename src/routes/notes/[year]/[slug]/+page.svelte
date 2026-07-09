@@ -21,6 +21,18 @@
 		return match;
 	});
 
+	//Move this date formatter to a shared file so we don't have to duplicate
+	//I feel like we can handle the dates better in general.
+	const noteDateFormatter = new Intl.DateTimeFormat('en-US', {
+		month: 'long',
+		day: '2-digit',
+		timeZone: 'UTC'
+	});
+
+	function formatNoteDate(date: string): string {
+		return noteDateFormatter.format(new Date(date));
+	}
+
 	const NoteContent = $derived(note.component);
 </script>
 
@@ -35,13 +47,13 @@
 <article class="note-page">
 	<header>
 		<a class="back-link" href={`/notes/${data.year}`}>&lt;- Back to all {data.year} Notes</a>
-		<h1>{data.title}</h1>
+		<h1>{formatNoteDate(data.date)}, Meeting Notes</h1>
 		<div class="note-meta">
 			<p>{data.summary}</p>
 		</div>
 	</header>
 
-	<div class="note-body prose">
+	<div class="markdown-surface markdown-prose">
 		<NoteContent />
 	</div>
 </article>
@@ -77,48 +89,5 @@
 
 	.note-meta p {
 		margin: 0.5rem 0 0;
-	}
-
-	.note-body {
-		padding: 2rem;
-		border-radius: 1.25rem;
-		background: #f8f8f8;
-		box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
-	}
-
-	.prose :global(h1) {
-		margin-top: 0;
-		font-size: clamp(2rem, 4vw, 3rem);
-	}
-
-	.prose :global(h2) {
-		margin-top: 2rem;
-		font-size: 1.7rem;
-	}
-
-	.prose :global(h3) {
-		margin-top: 1.5rem;
-		font-size: 1.25rem;
-		color: #701730;
-	}
-
-	.prose :global(p),
-	.prose :global(li) {
-		line-height: 1.7;
-		color: #222;
-	}
-
-	.prose :global(a) {
-		color: #c76b00;
-	}
-
-	.prose :global(ul),
-	.prose :global(ol) {
-		padding-left: 1.25rem;
-	}
-
-	.prose :global(img) {
-		max-width: 100%;
-		height: auto;
 	}
 </style>

@@ -14,7 +14,6 @@
 
 <div class="notes-page">
 	<header>
-		<p class="eyebrow">Club Meeting Notes</p>
 		<h1>Meeting Notes</h1>
 		<p class="intro">
 			Browse notes by school year. Notes currently span the 2024-2025 and 2025-2026 club years.
@@ -43,17 +42,9 @@
 		margin-bottom: 2rem;
 	}
 
-	.eyebrow {
-		margin: 0 0 0.5rem;
-		color: #701730;
-		font-size: 0.9rem;
-		font-weight: 700;
-		letter-spacing: 0.08em;
-		text-transform: uppercase;
-	}
-
 	h1 {
 		margin: 0;
+		color: #701730;
 		font-size: clamp(2.5rem, 5vw, 4rem);
 	}
 
