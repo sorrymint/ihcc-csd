@@ -1,0 +1,48 @@
+.markdown-page {
+	max-width: 56rem;
+	margin: 0 auto;
+	padding: 8rem 1.25rem 5rem;
+}
+
+.markdown-surface {
+	padding: 2rem;
+	border-radius: 1.25rem;
+	background: #f8f8f8;
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+.markdown-prose h1 {
+	margin-top: 0;
+	font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.markdown-prose h2 {
+	margin-top: 2rem;
+	font-size: 1.7rem;
+}
+
+.markdown-prose h3 {
+	margin-top: 1.5rem;
+	font-size: 1.25rem;
+	color: #701730;
+}
+
+.markdown-prose p,
+.markdown-prose li {
+	line-height: 1.7;
+	color: #222;
+}
+
+.markdown-prose a {
+	color: #c76b00;
+}
+
+.markdown-prose ul,
+.markdown-prose ol {
+	padding-left: 1.25rem;
+}
+
+.markdown-prose img {
+	max-width: 100%;
+	height: auto;
+}
