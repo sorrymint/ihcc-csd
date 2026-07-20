@@ -1,34 +1,20 @@
 # Computer Software Development Club Website
 
-Hello! 👋  
-Thank you for checking out our **Computer Software Development (CSD) Club Website**!
+:'######:::'######::'########::::::'######::'##:::::::'##::::'##:'########::
+'##... ##:'##... ##: ##.... ##::::'##... ##: ##::::::: ##:::: ##: ##.... ##:
+ ##:::..:: ##:::..:: ##:::: ##:::: ##:::..:: ##::::::: ##:::: ##: ##:::: ##:
+ ##:::::::. ######:: ##:::: ##:::: ##::::::: ##::::::: ##:::: ##: ########::
+ ##::::::::..... ##: ##:::: ##:::: ##::::::: ##::::::: ##:::: ##: ##.... ##:
+ ##::: ##:'##::: ##: ##:::: ##:::: ##::: ##: ##::::::: ##:::: ##: ##:::: ##:
+. ######::. ######:: ########:::::. ######:: ########:. #######:: ########::
+:......::::......:::........:::::::......:::........:::.......:::........:::
 
----
 
-## 📖 Background
 
-This project began when **Caden Epp** started a group to improve our CSD Club Website.
+## V1.0 Pages & Contributors
 
-1. We began by gathering requirements for the UI design.
-2. Created the initial mockup using [Figma](https://www.figma.com/design/kvwpcCw1ymmAvHKgOKNrza/CSD-Club-Website-High-Fidelity-Wireframe?node-id=0-1&t=ZxWtopRbdCGb0u63-1).
-3. Moved into the development phase, assigning tasks to each team member with set deadlines.
-4. Met once a week to discuss challenges, progress updates, and new ideas.
-
-If you’d like to see detailed contributions, you can also check the **commit history** in the repository.
-
----
-
-## 🛠️ Version 1 Details
-
-**Tech Stack:**
-
-- **Next.js** (TypeScript)
-- **Tailwind CSS**
-- **Vercel** for hosting
-
----
-
-## 📂 Pages & Contributors
+<details>
+<summary>Click to expand</summary>
 
 ### **Home Page**
 
@@ -65,18 +51,6 @@ If you’d like to see detailed contributions, you can also check the **commit h
 
 - Laillah Zainath
 
----
-
-## 🚀 Future Plans
-
-Version 1 is complete, but we plan to continue adding new features to grow our online presence—stay tuned!
-
----
-
-<br>
-<br>
-
-# Versions
 
 ## Version 1.1
 
@@ -98,30 +72,23 @@ Version 1 is complete, but we plan to continue adding new features to grow our o
 - **Notes Page Styles** — Ashley Abongwa
 - **Podcast Page** — Caden Epp
 
----
+</details>
 
-<br>
-<br>
+## Version 2.0
 
-# Documentation
+Project was ported to SvelteKit and the following updates were made:
 
-Below is documentation for the CSD Club Website
+- Club meeting notes now have metadata to provide better cards
+- All images were converted to WebP format for better performance
+- Ground work for Blog page was laid out
+- Podcast page was temporarily removed.
+- Website logo and icon were updated to be `.svg` format for better performance.
 
-## Hard Resetting Browser
+## Future Updates
 
-**Windows/Linux:** `Press Ctrl + F5 or Ctrl + Shift + R`
-
-**Mac:** `Press Cmd + Shift + R or Option + Cmd + E (Safari)`
-
-**Alternatively:** Open Developer Tools (F12), right-click the reload button, and select "Empty Cache and Hard Reload".
-
-<br>
-<br>
-
----
-
-**Thank you,**  
-_Computer Software Development Club_
+- Move Alumni Page data to JSON file for better maintainability
+- Rebuild Podcast page with new student owned Podcast.
+- Update Images, FAQ, social media links, and Alumni data to reflect current club members.
 
 ## Image conversion
 
