@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { SvglFacebookLogo, SvglInstagramLogo, SvglGitHubLogo } from '@selemondev/svgl-svelte';
+	import favicon from '$lib/assets/favicon.svg';
 	//TODO update these links, and move them to a icon library
 	const socialLinks = [
 		{ href: 'https://www.facebook.com/', label: 'Facebook', src: '/Images/FaceBookNew.png' },
@@ -29,9 +30,9 @@
 		<div class="footer-grid">
 			<a class="shrink-0" href="/" aria-label="Go to home page">
 				<img
-					src="/Images/Code.svg"
+					src={favicon}
 					alt="Computer Software Development Club Logo"
-					class="h-20 w-auto md:h-12"
+					class="h-10 w-auto md:h-12"
 				/>
 			</a>
 
@@ -129,24 +130,6 @@
 		margin-top: 2rem;
 	}
 
-	.footer-logo img {
-		display: block;
-	}
-
-	.quick-links {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 0.75rem;
-	}
-
-	.quick-links a {
-		color: #000;
-		text-decoration: none;
-		font-weight: 700;
-		text-transform: uppercase;
-	}
-
 	.social-links {
 		display: flex;
 		align-items: center;
@@ -154,11 +137,6 @@
 		gap: 1rem;
 		flex-wrap: wrap;
 	}
-
-	.social-links img {
-		display: block;
-	}
-
 	.desktop-copy {
 		display: none;
 	}
@@ -173,17 +151,8 @@
 			justify-content: space-evenly;
 		}
 
-		.quick-links {
-			flex-direction: row;
-			gap: 2rem;
-		}
-
 		.desktop-copy {
 			display: block;
-		}
-
-		.mobile-copy {
-			display: none;
 		}
 	}
 </style>
