@@ -32,6 +32,8 @@ Grab your old cans and bottles to bring them on Sept 23 to help the club raise m
 
 We need to hold a vote to see if the club wants to spend club funds to help sponsor Byte Jam this year. The computer club has sponsored Byte Jam every year in the past (~11 years). The college just requires us to hold a vote.
 
+Vote Passed.
+
 ### 8th Grade Day
 
 10am on October 16th and November 6th. We will be hosting a lesson for 8th grader day.
