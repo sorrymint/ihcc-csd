@@ -56,4 +56,21 @@ When do we want to have game night?
 
 What game?
 
+## Minutes
+
+Luis starts meeting
+
+Go over what club does
+
+Talk about 8th grader day.
+
+Pizza Ranch fundraiser, we go bus tables more details to come later.
+
+Lilith goes over tee shirt contest design rules and notes on it.
+
+Luis talks about fall bash, at pavilion over lunch hour on Sept. 30th
+
+Luke talks about Club Website, if we want to see change in it as a club that's up to us.
+
 ## Attendance
+Lilith Smith, Luis Acuna, Conor Cloyd, Ethan Umphress, Dominike Deevers, Lillian Pena, Jaydon Jones, Draven Livingston, Conrad Parker, Chalan Zugg, Cash Cooper, Liam Matherly, Mason Ellington, Caleb Seieroe, Wyatt Rupe, Stephen Repp
